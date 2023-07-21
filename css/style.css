@@ -13,26 +13,14 @@ body{
         background-color:#aeaeae;
     }
 
-
-
 header h1 {
     color: orangered;
     padding: 10px;
     font-size:170%;
-
 }
-
 
 header h1 span {
     color: rgb(242, 230, 208);
-}
-
-header nav div div ul li a{
-    color:rgb(89, 76, 76);
-}
-
-.navbar-nav .nav-link:hover{
-    color: orangered;
 }
 
 
@@ -81,7 +69,7 @@ header nav div div ul li a{
     height:400px;
 }
 
-.buscador-redes{
+.buscador-redes {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -99,7 +87,7 @@ flex-direction: row;
 }
 
 .buscador-redes i{
-    height: -60px;
+    height: 0px;
 }
 /*inicio*/
 
@@ -258,11 +246,6 @@ flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-
-.prueba div h2{
-    text-align: left;
-}
-
 
 .prueba .biografia div{
     display: block;
