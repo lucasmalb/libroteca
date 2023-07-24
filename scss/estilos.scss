@@ -1,0 +1,76 @@
+header{
+    nav{
+        background-color:#aeaeae;
+        div{
+            div{
+                ul{
+                    li{
+                        a{
+                            color:rgb(89, 76, 76);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    h1{
+        color: orangered;
+        padding: 10px;
+        font-size:170%;
+    span{
+        color: rgb(242, 230, 208);
+    }
+    }
+
+}
+.nav-bar{
+    list-style: none;
+    text-decoration: none;
+    color: orangered;
+    margin:5px;
+    .nav-link {
+        &{ color: orangered;
+    }        
+        }
+}
+.navbar-nav{
+    list-style: none;
+    text-decoration: none;
+    color: orangered;
+    margin:5px;
+}
+.boton{
+
+}
+
+.portada{
+    width: 100%;
+    background-image: url(../img/portada.png); 
+    background-position:center ;
+    background-repeat:no-repeat ;
+    background-size:cover ;
+    background-attachment: fixed; 
+        h2{
+            color: orangered;
+            font-size:100px; 
+            padding:15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            span{
+                color:rgb(242, 230,208)
+            }
+}
+
+
+
+@import "./base/generales";
+@import "./base/variables";
+@import "./components/header";
+@import "./components/layout";
+@import "./components/footer";
+@import "./base/mediaquery";
+
+    
+}

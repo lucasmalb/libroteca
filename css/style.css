@@ -1,5 +1,4 @@
-
-    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
 
 *{  margin: 0;
     padding: 0;
@@ -13,14 +12,26 @@ body{
         background-color:#aeaeae;
     }
 
+
+
 header h1 {
     color: orangered;
     padding: 10px;
     font-size:170%;
+
 }
+
 
 header h1 span {
     color: rgb(242, 230, 208);
+}
+
+header nav div div ul li a{
+    color:rgb(89, 76, 76);
+}
+
+.navbar-nav .nav-link:hover{
+    color: orangered;
 }
 
 
@@ -69,7 +80,7 @@ header h1 span {
     height:400px;
 }
 
-.buscador-redes {
+.buscador-redes{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -87,74 +98,97 @@ flex-direction: row;
 }
 
 .buscador-redes i{
-    height: 0px;
+    height: -60px;
 }
 /*inicio*/
 
-.aventura h2{
+.seccion-destacados h2{
     background-color:#aeaeae;
     color: rgb(89,76, 76);
     text-align: center;
     margin: 0px;
     padding: 10px;
+    margin: 1rem 0;
 }
-
-
-
-
-/*genero*/
-.aventuras {
-    text-align: center;
-    
-}
-
-.aventura h2 {
-    background-color: #aeaeae;
-    width: 100%;
-    color: #635d5d;
-    text-align: center;
-    
-}
-
-.contenedor {
+.seccion-destacados .contenedor-destacados{
+    padding: 16px;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    padding: 5px;
-    gap: 10px;
-    
+    justify-content: space-around;
+    align-items: center;
+
 }
-
-
-.contenedor .aventura{
-    width: 150px;
-    height: 280px;
+.seccion-destacados .contenedor-destacados .destacado{
+    max-width: 180px;
+    text-align: center;
     border: 2px solid #635d5d;
     text-align: center;
     color: #635d5d;
     background-color: rgb(242, 230, 208);
-    
-
+  
 }
-
-.aventura {
+.seccion-destacados .contenedor-destacados .destacado img{
+    width: 100%;
+}
+.seccion-destacados .contenedor-destacados .destacado h3{
+    min-height: 65px;
+    margin-top: 1rem;
+    font-size: 22px;
+}
+.seccion-video{
+    padding: 2rem 0;
+}
+.seccion-video h2{
+    background-color:#aeaeae;
+    color: rgb(89,76, 76);
     text-align: center;
-    margin: 0 10px;
-    
+    margin: 0px;
+    padding: 10px;
+    margin: 1rem 0;
 }
 
-.aventura img {
-    width: 150px ;
-    
+.seccion-video iframe{
+    min-width: 700px;
+    min-height: 450px;
+    display: block;
+    margin: auto;
 }
 
-.aventura h3 {
-    font-family: 'Kanit', sans-serif;
-    font-family: 'Montserrat Alternates', sans-serif;;
+
+/*genero*/
+.pagina-genero .seccion-libros{
+    margin: 1rem 0;
+}
+.pagina-genero .seccion-libros .grilla{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.pagina-genero .seccion-libros .grilla .libro{
+    border: 2px solid #635d5d;
+    text-align: center;
+    color: #635d5d;
+    background-color: rgb(242, 230, 208);
+    margin: 16px auto;
+    max-width: 160px;
+}
+.pagina-genero .seccion-libros .grilla .libro img{
+    width: 100%;
+}
+.libro .titulo-libro{
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 15px;
     margin-top: 10px;
-
 }
+.pagina-genero .titulo-genero{
+    background-color: #aeaeae;
+    color: #635d5d;
+    text-align: center;
+}
+
+
+
 /*autor*/
 .autor ul li{
     list-style: none;
@@ -247,6 +281,11 @@ flex-direction: row;
     align-items: center;
 }
 
+.prueba div h2{
+    text-align: left;
+}
+
+
 .prueba .biografia div{
     display: block;
 }
@@ -267,19 +306,26 @@ flex-direction: row;
 }
 /*footer*/
 footer{
+    padding: 0 1rem;
     background-color: #aeaeae;
-    display: flex;
     justify-content:space-between;
     align-items: center;
-    grid-template-columns: repeat (3,1fr);
-    width: 100%;
+    display: grid;
+    grid-template-areas: "logo redes mail";
 }
 
 footer h2 {
     color: orangered;
     padding: 10px;
     font-size: 30px;
+    grid-area: logo;
 
+}
+footer .redes{
+    grid-area: redes;
+}
+footer .mail{
+    grid-area: mail;
 }
 footer h2 span {
     color:rgb(242, 230, 208)
@@ -301,22 +347,27 @@ footer div img{
 footer div a{
 text-decoration: none;}
 
-/*divergente*/
-.row .col{
-    width: 300%;
-
-    border: 2px solid #635d5d;
-
+footer .redes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
-@media screen and (max-width: 640px){ 
-.position{
-    display: none;
-}
-};
 
-@media screen and (max-width: 800px){
+/* MEDIA QUERY PARA TABLET */
+@media screen and (max-width: 992px){
+ 
+    .pagina-genero .seccion-libros .grilla{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .seccion-destacados .contenedor-destacados .destacado{
+        width: 48%;
+        margin: 1rem;
+        
+    }
+
     .portada{
-        width: 50%;
+        width: 100%;
         background-image: url(../img/portada.png); 
         background-position:center;
         background-repeat:no-repeat;
@@ -325,7 +376,7 @@ text-decoration: none;}
     }
     .portada h2{
         color: orangered;
-        font-size:-80; 
+        font-size:62px; 
         padding:15px;
         display: flex;
         justify-content: center;
@@ -335,29 +386,59 @@ text-decoration: none;}
         .portada h2 span{
             color:rgb(242, 230,208)
         }
-};
-    
-
-@media screen and (max-width:800px){
-    
-.bienvenidos{
-    flex-direction: column;
-    width:80%;
-    text-align: center;
-    margin: 20px;
+        .bienvenidos{
+            flex-direction: column;
+            width:80%;
+            text-align: center;
+            margin: 20px;
+        }
+        .seccion-video iframe{
+            min-width: 350px;
+            min-height: 250px;
+            display: block;
+            margin: auto;
+        
+        
 }
+    
+/* MEDIA QUERY PARA MOBILE */
+@media screen and (max-width: 640px){ 
+.position{
+    display: none;
 }
 
-@media screen and (max-width:800px){
-.footer{
-    width: 100%;
-    background-color: #aeaeae;
-    display: grid;
-    grid-template-columns:repeat(1, 1fr);
-    grid-row: (1);
-    grid-gap: 30px;
-    padding: 35px 0px;
-    
+.pagina-genero .seccion-libros .grilla{
+    grid-template-columns: 1fr
+}
+.seccion-destacados .contenedor-destacados .destacado{
+    width: 100%
+}
+.seccion-video iframe{
+    min-width: 350px;
+    min-height: 250px;
+    display: block;
+    margin: auto;
+}
+
+footer{
+    grid-template-areas: 
+    "logo logo logo"
+    "redes redes redes"
+    "mail mail mail";
 } 
-};
+footer .libro,footer .mail {
+    text-align: center;
+}
+
+}
+@media screen and (max-width: 368px){ 
+    .seccion-video iframe{
+        min-width: 320px;
+        min-height: 250px;
+        display: block;
+        margin: auto;
+}
+
+
+
 
