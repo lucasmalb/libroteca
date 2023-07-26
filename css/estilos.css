@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap");
+.portada {
+  width: 100%;
+  background-image: url(../img/portada.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .portada h2 {
+    color: orangered;
+    font-size: 100px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .portada span {
+    color: #f2e6d0; }
+  .portada .buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; }
+  .portada .buscador-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .portada .buscador-redes i {
+      font-size: 25px;
+      color: #AD9E8E;
+      display: flex;
+      flex-direction: row;
+      margin: 5px;
+      height: -60px; }
+
+.seccion-destacados h2 {
+  background-color: #aeaeae;
+  color: #594c4c;
+  text-align: center;
+  margin: 0px;
+  padding: 10px;
+  margin: 1rem 0; }
+
+.seccion-destacados .contenedor-destacados {
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+  .seccion-destacados .contenedor-destacados .destacado {
+    max-width: 180px;
+    text-align: center;
+    border: 2px solid #635d5d;
+    text-align: center;
+    color: #635d5d;
+    background-color: #f2e6d0; }
+    .seccion-destacados .contenedor-destacados .destacado a img {
+      width: 100%; }
+    .seccion-destacados .contenedor-destacados .destacado a h3 {
+      min-height: 65px;
+      margin-top: 1rem;
+      font-size: 22px; }
+
+.seccion-video {
+  padding: 2rem 0; }
+  .seccion-video h2 {
+    background-color: #aeaeae;
+    color: #594c4c;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+    margin: 1rem 0; }
+  .seccion-video iframe {
+    min-width: 700px;
+    min-height: 450px;
+    display: block;
+    margin: auto; }
+
+.pagina-genero .seccion-libros {
+  margin: 1rem 0; }
+  .pagina-genero .seccion-libros .titulo-genero {
+    background-color: #aeaeae;
+    color: #635d5d;
+    text-align: center; }
+  .pagina-genero .seccion-libros .grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center; }
+    .pagina-genero .seccion-libros .grilla .libros {
+      border: 2px solid #635d5d;
+      text-align: center;
+      color: #635d5d;
+      background-color: #f2e6d0;
+      margin: 16px auto;
+      max-width: 160px; }
+      .pagina-genero .seccion-libros .grilla .libros img {
+        width: 100%; }
+    .pagina-genero .seccion-libros .grilla .titulo-libros {
+      font-family: 'Montserrat Alternates', sans-serif;
+      font-size: 15px;
+      margin-top: 10px; }
+
+.position a img {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  width: 50px;
+  height: 50px; }
+
+.colores {
+  background-image: url(../img/portada.png);
+  min-height: 100vh;
+  font-family: inherit;
+  width: 100%;
+  display: flex; }
+  .colores .form {
+    font-family: inherit;
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em; }
+    .colores .form .form-container {
+      font-family: inherit;
+      width: 100%;
+      display: grid;
+      gap: 1em;
+      grid-auto-columns: 100%; }
+      .colores .form .form-container h2 {
+        font-family: inherit;
+        text-align: center;
+        font-size: 1.9rem;
+        margin-bottom: 4em; }
+      .colores .form .form-container .form-input {
+        font-family: inherit;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+        border: 1px solid orangered;
+        border-radius: 0.2em; }
+      .colores .form .form-container .form-cta {
+        font-family: inherit;
+        font-size: 1rem;
+        background-color: #089FE0;
+        color: white;
+        border: none;
+        font-weight: 200px;
+        border-radius: 2em;
+        cursor: pointer;
+        font-weight: 400px; }
+
+/*publicaciones*/
+.prueba {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .prueba div {
+    display: block; }
+    .prueba div h2 {
+      text-align: left; }
+    .prueba div .biografia {
+      width: 80px;
+      background-color: #cfcccb;
+      cursor: pointer;
+      margin-top: 10px; }
+      .prueba div .biografia a img {
+        width: 25px;
+        height: 25px; }
+
+footer h2 {
+  color: orangered;
+  padding: 10px;
+  font-size: 30px;
+  grid-area: logo; }
+  footer h2 span {
+    color: #f2e6d0; }
+
+footer .redes {
+  grid-area: redes;
+  display: flex;
+  justify-content: center;
+  gap: 20px; }
+  footer .redes img {
+    width: 35px;
+    height: 35px; }
+
+footer .mail {
+  grid-area: mail; }
+
+footer h3 a {
+  text-decoration: none;
+  color: #594c4c; }
+  footer h3 a {
+    color: orangered; }
+
+@media screen and (max-width: 992px) {
+  .portada {
+    width: 100%;
+    background-image: url(../img/portada.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+    .portada h2 {
+      color: orangered;
+      font-size: 62px;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .portada h2 span {
+        color: #f2e6d0; } }
+
+.seccion-destacados .contenedor-destacados .destacado {
+  width: 48%;
+  margin: 1rem; }
+
+.seccion-video iframe {
+  min-width: 350px;
+  min-height: 250px;
+  display: block;
+  margin: auto; }
+
+.pagina-genero .seccion-libros .grilla {
+  grid-template-columns: 1fr 1fr; }
+
+/*media query para mobile*/
+@media screen and (max-width: 640px) {
+  .position {
+    display: none; }
+  .seccion-destacados .contenedor-destacados .destacado {
+    width: 100%; }
+  .seccion-video iframe {
+    min-width: 350px;
+    min-height: 250px;
+    display: block;
+    margin: auto; }
+  .pagina-genero .seccion-libros .grilla {
+    grid-template-columns: 1fr; }
+  footer .libro {
+    text-align: center; }
+  footer .mail {
+    text-align: center; } }
+
+@media screen and (max-width: 368px) {
+  .seccion-video iframe {
+    min-width: 320px;
+    min-height: 250px;
+    display: block;
+    margin: auto; }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  .portada {
+    width: 100%;
+    background-image: url(../img/portada.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+    .portada h2 {
+      color: orangered;
+      font-size: 100px;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .portada h2 span {
+        color: #f2e6d0; }
+    .portada .buscador {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px; }
+    .portada .buscador-redes {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .portada .buscador-redes i {
+        font-size: 25px;
+        color: #AD9E8E;
+        display: flex;
+        flex-direction: row;
+        margin: 5px; }
+  .aventura h2 {
+    background-color: #aeaeae;
+    color: #594c4c;
+    text-align: center;
+    margin: 0px;
+    padding: 10px; }
+  /*genero*/
+  .aventura h2 {
+    background-color: #aeaeae;
+    width: 100%;
+    color: #635d5d;
+    text-align: center; }
+  .aventura .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 10px; }
+    .aventura .contenedor .aventura {
+      width: 150px;
+      height: 280px;
+      border: 2px solid #635d5d;
+      text-align: center;
+      color: #635d5d;
+      background-color: #f2e6d0;
+      margin: 0 10px; }
+      .aventura .contenedor .aventura a img {
+        width: 150px; }
+      .aventura .contenedor .aventura h3 {
+        font-family: 'Kanit', sans-serif;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 15px;
+        margin-top: 10px; }
+  .position a img {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 50px;
+    height: 50px; }
+  /*pedidos*/
+  .colores .form {
+    font-family: inherit;
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em; }
+    .colores .form .form-container {
+      font-family: inherit;
+      width: 100%;
+      display: grid;
+      gap: 1em;
+      grid-auto-columns: 100%; }
+      .colores .form .form-container .form.title {
+        font-family: inherit;
+        text-align: center;
+        font-size: 1.9rem;
+        margin-bottom: 4em; }
+      .colores .form .form-container .form-input {
+        font-family: inherit;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+        border: 1px solid orangered;
+        border-radius: 0.2em; }
+      .colores .form .form-container .form-cta {
+        font-family: inherit;
+        font-size: 1rem;
+        background-color: #089FE0;
+        color: white;
+        border: none;
+        font-weight: 200px;
+        border-radius: 2em;
+        cursor: pointer;
+        font-weight: 400px; }
+  footer {
+    background-color: #aeaeae;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat 3, 1fr;
+    width: 100%; }
+    footer h2 {
+      color: orangered;
+      padding: 10px;
+      font-size: 30px; }
+      footer h2 span {
+        color: #f2e6d0; }
+      footer h2 div a {
+        text-decoration: none; }
+        footer h2 div a img {
+          width: 35px;
+          height: 35px; }
+    footer div h2 a {
+      text-decoration: none;
+      color: #594c4c; }
+      footer div h2 a:hover {
+        color: orangered; } }
