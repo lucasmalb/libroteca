@@ -339,7 +339,6 @@ footer .redes{
 
 /* MEDIA QUERY PARA TABLET */
 @media screen and (max-width: 992px){
- 
     .pagina-genero .seccion-libros .grilla{
         grid-template-columns: 1fr 1fr;
     }
@@ -381,10 +380,8 @@ footer .redes{
             min-height: 250px;
             display: block;
             margin: auto;
-        
-        
 }
-    
+}
 /* MEDIA QUERY PARA MOBILE */
 @media screen and (max-width: 640px){ 
 .position{
@@ -395,7 +392,7 @@ footer .redes{
     grid-template-columns: 1fr
 }
 .seccion-destacados .contenedor-destacados .destacado{
-    width: 100%
+    width: 100%;
 }
 .seccion-video iframe{
     min-width: 350px;
@@ -422,7 +419,7 @@ footer .libro,footer .mail {
         display: block;
         margin: auto;
 }
-
+}
 
 
 

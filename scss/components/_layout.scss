@@ -1,3 +1,4 @@
+
 .portada {
     width: 100%;
     background-image: url(../img/portada.png);
@@ -5,6 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
     h2 {
         color: orangered;
         font-size: 100px;
@@ -12,10 +14,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
 
-        span {
-            color: rgb(242, 230, 208)
-        }
+    span {
+        color: rgb(242, 230, 208)
     }
 
     .buscador {
@@ -37,57 +39,99 @@
             display: flex;
             flex-direction: row;
             margin: 5px;
+            height: -60px;
         }
     }
 }
 
-.aventura {
+.seccion-destacados {
     h2 {
         background-color: #aeaeae;
         color: rgb(89, 76, 76);
         text-align: center;
         margin: 0px;
         padding: 10px;
-    }
-}
-
-/*genero*/
-.aventura {
-    h2 {
-        background-color: #aeaeae;
-        width: 100%;
-        color: #635d5d;
-        text-align: center;
+        margin: 1rem 0;
     }
 
-    .contenedor {
+    .contenedor-destacados {
+        padding: 16px;
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
-        padding: 5px;
-        gap: 10px;
+        justify-content: space-around;
+        align-items: center;
 
-        .aventura {
-            width: 150px;
-            height: 280px;
+        .destacado {
+            max-width: 180px;
+            text-align: center;
             border: 2px solid #635d5d;
             text-align: center;
             color: #635d5d;
             background-color: rgb(242, 230, 208);
-            margin: 0 10px;
 
             a {
                 img {
-                    width: 150px;
+                    width: 100%;
+                }
+
+                h3 {
+                    min-height: 65px;
+                    margin-top: 1rem;
+                    font-size: 22px;
                 }
             }
+        }
+    }
+}
 
-            h3 {
-                font-family: 'Kanit', sans-serif;
-                font-family: 'Montserrat Alternates', sans-serif;
-                ;
-                font-size: 15px;
-                margin-top: 10px;
+.seccion-video {
+    padding: 2rem 0;
+
+    h2 {
+        background-color: #aeaeae;
+        color: rgb(89, 76, 76);
+        text-align: center;
+        margin: 0px;
+        padding: 10px;
+        margin: 1rem 0;
+    }
+
+    iframe {
+        min-width: 700px;
+        min-height: 450px;
+        display: block;
+        margin: auto;
+    }
+}
+
+.pagina-genero{
+    .seccion-libros{
+        margin: 1rem 0;
+        .titulo-genero{
+            background-color: #aeaeae;
+            color: #635d5d;
+            text-align: center;
+        }
+        .grilla{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            .libros{
+                border: 2px solid #635d5d;
+                text-align: center;
+                color: #635d5d;
+                background-color: rgb(242, 230, 208);
+                margin: 16px auto;
+                max-width: 160px;
+                img{
+                    width: 100%;
+                .titulo-libro{
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    font-size: 15px;
+                    margin-top: 10px;
+                }
+                }
             }
         }
     }
@@ -101,12 +145,18 @@
             right: 20px;
             width: 50px;
             height: 50px;
+
         }
     }
 }
 
-/*pedidos*/
 .colores {
+    background-image: url(../img/portada.png);
+    min-height: 100vh;
+    font-family: inherit;
+    width: 100%;
+    display: flex;
+
     .form {
         font-family: inherit;
         background-color: white;
@@ -115,36 +165,69 @@
         max-width: 400px;
         border-radius: 1em;
         padding: 3.5em 1.5em;
-        .form-container {
-            font-family: inherit;
-            width: 100%;
-            display: grid;
-            gap: 1em;
-            grid-auto-columns: 100%;
-            .form.title {
+            .form-container {
                 font-family: inherit;
-                text-align: center;
-                font-size: 1.9rem;
-                margin-bottom: 4em;
+                width: 100%;
+                display: grid;
+                gap: 1em;
+                grid-auto-columns: 100%;
+
+                h2 {
+                    font-family: inherit;
+                    text-align: center;
+                    font-size: 1.9rem;
+                    margin-bottom: 4em;
+                }
+
+                .form-input {
+                    font-family: inherit;
+                    font-size: 1rem;
+                    outline: none;
+                    border: none;
+                    border: 1px solid orangered;
+                    border-radius: 0.2em;
+                }
+
+                .form-cta {
+                    font-family: inherit;
+                    font-size: 1rem;
+                    background-color: #089FE0;
+                    color: white;
+                    border: none;
+                    font-weight: 200px;
+                    border-radius: 2em;
+                    cursor: pointer;
+                    font-weight: 400px;
+                }
             }
-            .form-input {
-                font-family: inherit;
-                font-size: 1rem;
-                outline: none;
-                border: none;
-                border: 1px solid orangered;
-                border-radius: 0.2em;
-            }
-            .form-cta {
-                font-family: inherit;
-                font-size: 1rem;
-                background-color: #089FE0;
-                color: white;
-                border: none;
-                font-weight: 200px;
-                border-radius: 2em;
-                cursor: pointer;
-                font-weight: 400px;
+        }
+    }
+
+
+/*publicaciones*/
+.prueba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        display: block;
+
+        h2 {
+            text-align: left;
+        }
+
+        .biografia {
+            width: 80px;
+            background-color: rgb(207, 204, 203);
+            cursor: pointer;
+            margin-top: 10px;
+
+            a {
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
             }
         }
     }
