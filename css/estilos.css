@@ -35,13 +35,16 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center; }
-  .portada span {
-    color: #f2e6d0; }
+    .portada h2 span {
+      color: #f2e6d0; }
   .portada .buscador {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px; }
+    height: 400px;
+    display: flex;
+    justify-self: center;
+    align-items: center; }
     .portada .buscador .boton {
       border: 2px solid #f2e6d0;
       color: #AD9E8E;
@@ -50,6 +53,10 @@ header nav {
   .portada .buscador-redes {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: flex-direction;
     justify-content: center;
     align-items: center; }
     .portada .buscador-redes i {
@@ -73,6 +80,9 @@ header nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
+  display: flex;
+  justify-self: space-around;
   align-items: center; }
   .seccion-destacados .contenedor-destacados .destacado {
     max-width: 180px;
@@ -182,6 +192,9 @@ header nav {
 .prueba {
   display: flex;
   justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-self: center;
   align-items: center; }
   .prueba div {
     display: block; }
@@ -200,6 +213,9 @@ footer {
   padding: 0 1rem;
   background-color: #aeaeae;
   justify-content: space-between;
+  align-items: center;
+  display: flex;
+  justify-self: space-between;
   align-items: center;
   display: grid;
   grid-template-areas: "logo redes mail"; }
@@ -240,6 +256,9 @@ footer {
       padding: 15px;
       display: flex;
       justify-content: center;
+      align-items: center;
+      display: flex;
+      justify-self: center;
       align-items: center; }
       .portada h2 span {
         color: #f2e6d0; }

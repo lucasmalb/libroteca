@@ -1,12 +1,12 @@
 @mixin flex ($flex,$justify,$align){
     display:$flex;
     justify-content:$justify;
-    align-items:$align;
+    align-items: $align;
 }
 @mixin flex ($flex,$justify,$align){
     display:$flex;
     justify-content:$justify;
-    align-items: $align;
+    align-items:$align;
 }
 @mixin flex ($flex,$justify,$align){
     display:$flex;
@@ -14,7 +14,7 @@
     align-items:$align;
 }
 
-@mixin flex($flex,$direction,$justify,$align){
+@mixin direction ($flex,$direction,$justify,$align){
     display:$flex;
     flex-direction:$direction;
     justify-content:$justify;

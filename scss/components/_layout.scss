@@ -28,7 +28,7 @@
         justify-content: center;
         align-items: center;
         height: 400px;
-        @include flex (flex,center,center);
+        @include flex (flex, center, center);
         .boton{
             border:2px solid  rgb(242, 230, 208);
             color: #AD9E8E;
@@ -41,7 +41,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        @include flex (flex,flex-direction,center,center);
+        @include direction (flex,flex-direction,center,center);
         i {
             font-size: 25px;
             color: #AD9E8E;
