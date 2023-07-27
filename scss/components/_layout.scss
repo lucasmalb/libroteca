@@ -1,3 +1,9 @@
+.boton{
+    border:2px solid  rgb(242, 230, 208);
+    color: #AD9E8E;
+    display: flex;
+    border-radius: 15px;
+}
 
 .portada {
     width: 100%;
@@ -25,6 +31,12 @@
         justify-content: center;
         align-items: center;
         height: 400px;
+        .boton{
+            border:2px solid  rgb(242, 230, 208);
+            color: #AD9E8E;
+            display: flex;
+            border-radius: 15px;
+        }
     }
 
     .buscador-redes {
@@ -117,7 +129,7 @@
             grid-template-columns: 1fr 1fr 1fr 1fr;
             justify-content: center;
             align-items: center;
-            .libros{
+            .libro{
                 border: 2px solid #635d5d;
                 text-align: center;
                 color: #635d5d;
@@ -130,12 +142,13 @@
                     font-family: 'Montserrat Alternates', sans-serif;
                     font-size: 15px;
                     margin-top: 10px;
+                    }
                 }
-                }
-            }
+            }   
         }
     }
 }
+            
 
 .position {
     a {

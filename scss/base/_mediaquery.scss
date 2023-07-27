@@ -18,7 +18,7 @@
                 }
             }
         }
-    }
+    
     .seccion-destacados{
         .contenedor-destacados{
             .destacado {
@@ -39,10 +39,15 @@
         .seccion-libros{
             .grilla{
                 grid-template-columns: 1fr 1fr;
+                .libro{
+                    .titulo-libro{
+                        font-family: 'Montserrat Alternates', sans-serif;
+                    }
+                }
             }
         }
     }
-
+}
 
 /*media query para mobile*/
 @media screen and (max-width: 640px){

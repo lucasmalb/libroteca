@@ -4,6 +4,23 @@
   padding: 0;
   box-sizing: border-box; }
 
+header nav {
+  background-color: #aeaeae; }
+  header nav h1 {
+    color: orangered;
+    padding: 10px;
+    font-size: 170%; }
+    header nav h1 span {
+      color: #f2e6d0; }
+  header nav div div ul li a {
+    color: #594c4c; }
+
+.boton {
+  border: 2px solid #f2e6d0;
+  color: #AD9E8E;
+  display: flex;
+  border-radius: 15px; }
+
 .portada {
   width: 100%;
   background-image: url(../img/portada.png);
@@ -25,6 +42,11 @@
     justify-content: center;
     align-items: center;
     height: 400px; }
+    .portada .buscador .boton {
+      border: 2px solid #f2e6d0;
+      color: #AD9E8E;
+      display: flex;
+      border-radius: 15px; }
   .portada .buscador-redes {
     display: flex;
     flex-direction: row;
@@ -92,16 +114,16 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center; }
-    .pagina-genero .seccion-libros .grilla .libros {
+    .pagina-genero .seccion-libros .grilla .libro {
       border: 2px solid #635d5d;
       text-align: center;
       color: #635d5d;
       background-color: #f2e6d0;
       margin: 16px auto;
       max-width: 160px; }
-      .pagina-genero .seccion-libros .grilla .libros img {
+      .pagina-genero .seccion-libros .grilla .libro img {
         width: 100%; }
-        .pagina-genero .seccion-libros .grilla .libros img .titulo-libro {
+        .pagina-genero .seccion-libros .grilla .libro img .titulo-libro {
           font-family: 'Montserrat Alternates', sans-serif;
           font-size: 15px;
           margin-top: 10px; }
@@ -220,20 +242,19 @@ footer {
       justify-content: center;
       align-items: center; }
       .portada h2 span {
-        color: #f2e6d0; } }
-
-.seccion-destacados .contenedor-destacados .destacado {
-  width: 48%;
-  margin: 1rem; }
-
-.seccion-video iframe {
-  min-width: 350px;
-  min-height: 250px;
-  display: block;
-  margin: auto; }
-
-.pagina-genero .seccion-libros .grilla {
-  grid-template-columns: 1fr 1fr; }
+        color: #f2e6d0; }
+  .seccion-destacados .contenedor-destacados .destacado {
+    width: 48%;
+    margin: 1rem; }
+  .seccion-video iframe {
+    min-width: 350px;
+    min-height: 250px;
+    display: block;
+    margin: auto; }
+  .pagina-genero .seccion-libros .grilla {
+    grid-template-columns: 1fr 1fr; }
+    .pagina-genero .seccion-libros .grilla .libro .titulo-libro {
+      font-family: 'Montserrat Alternates', sans-serif; } }
 
 /*media query para mobile*/
 @media screen and (max-width: 640px) {
