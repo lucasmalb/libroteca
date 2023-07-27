@@ -13,6 +13,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @include flex (flex, center, center);
             span{
                 color:rgb(242, 230,208)
                 }

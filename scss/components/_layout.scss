@@ -12,7 +12,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
     h2 {
         color: orangered;
         font-size: 100px;
@@ -20,17 +19,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
     span {
         color: rgb(242, 230, 208)
     }
-
+}
     .buscador {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 400px;
+        @include flex (flex,center,center);
         .boton{
             border:2px solid  rgb(242, 230, 208);
             color: #AD9E8E;
@@ -38,13 +36,12 @@
             border-radius: 15px;
         }
     }
-
     .buscador-redes {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-
+        @include flex (flex,flex-direction,center,center);
         i {
             font-size: 25px;
             color: #AD9E8E;
@@ -72,6 +69,7 @@
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
+        @include flex (flex, space-around, center);
 
         .destacado {
             max-width: 180px;
@@ -147,9 +145,7 @@
             }   
         }
     }
-}
-            
-
+}      
 .position {
     a {
         img {
@@ -222,6 +218,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include flex (flex,center,center);
 
     div {
         display: block;

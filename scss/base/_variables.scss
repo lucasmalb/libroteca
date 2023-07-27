@@ -2,5 +2,23 @@
     display:$flex;
     justify-content:$justify;
     align-items:$align;
-    @include flex(flex,center,center)
 }
+@mixin flex ($flex,$justify,$align){
+    display:$flex;
+    justify-content:$justify;
+    align-items: $align;
+}
+@mixin flex ($flex,$justify,$align){
+    display:$flex;
+    justify-self:$justify;
+    align-items:$align;
+}
+
+@mixin flex($flex,$direction,$justify,$align){
+    display:$flex;
+    flex-direction:$direction;
+    justify-content:$justify;
+    align-items:$align;
+}
+
+
