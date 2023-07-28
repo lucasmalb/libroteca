@@ -2,8 +2,6 @@
 footer {
     padding: 0 1rem;
     background-color: #aeaeae;
-    justify-content:space-between;
-    align-items: center;
     @include flex (flex,space-between,center);
     display: grid;
     grid-template-areas: "logo redes mail";
