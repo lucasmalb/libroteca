@@ -3,16 +3,7 @@
     justify-content:$justify;
     align-items: $align;
 }
-@mixin flex ($flex,$justify,$align){
-    display:$flex;
-    justify-content:$justify;
-    align-items:$align;
-}
-@mixin flex ($flex,$justify,$align){
-    display:$flex;
-    justify-self:$justify;
-    align-items:$align;
-}
+
 
 @mixin direction ($flex,$direction,$justify,$align){
     display:$flex;

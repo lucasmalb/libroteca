@@ -16,9 +16,7 @@
         color: orangered;
         font-size: 100px;
         padding: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, center, center);
     span {
         color: rgb(242, 230, 208)
     }
@@ -34,12 +32,10 @@
         }
     }
     .buscador-redes {
-        @include direction (flex,flex-direction,center,center);
         i {
             font-size: 25px;
             color: #AD9E8E;
-            display: flex;
-            flex-direction: row;
+            @include direction (flex,flex-direction,center,center);
             margin: 5px;
             height: -60px;
         }

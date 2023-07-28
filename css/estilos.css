@@ -40,25 +40,22 @@ header nav {
   .portada .buscador {
     height: 400px;
     display: flex;
-    justify-self: center;
+    justify-content: center;
     align-items: center; }
     .portada .buscador .boton {
       border: 2px solid #f2e6d0;
       color: #AD9E8E;
       display: flex;
       border-radius: 15px; }
-  .portada .buscador-redes {
+  .portada .buscador-redes i {
+    font-size: 25px;
+    color: #AD9E8E;
     display: flex;
     flex-direction: flex-direction;
     justify-content: center;
-    align-items: center; }
-    .portada .buscador-redes i {
-      font-size: 25px;
-      color: #AD9E8E;
-      display: flex;
-      flex-direction: row;
-      margin: 5px;
-      height: -60px; }
+    align-items: center;
+    margin: 5px;
+    height: -60px; }
 
 .seccion-destacados h2 {
   background-color: #aeaeae;
@@ -72,7 +69,7 @@ header nav {
   padding: 16px;
   flex-wrap: wrap;
   display: flex;
-  justify-self: space-around;
+  justify-content: space-around;
   align-items: center; }
   .seccion-destacados .contenedor-destacados .destacado {
     max-width: 180px;
@@ -181,7 +178,7 @@ header nav {
 /*publicaciones*/
 .prueba {
   display: flex;
-  justify-self: center;
+  justify-content: center;
   align-items: center; }
   .prueba div {
     display: block; }
@@ -200,7 +197,7 @@ footer {
   padding: 0 1rem;
   background-color: #aeaeae;
   display: flex;
-  justify-self: space-between;
+  justify-content: space-between;
   align-items: center;
   display: grid;
   grid-template-areas: "logo redes mail"; }
@@ -243,7 +240,7 @@ footer {
       justify-content: center;
       align-items: center;
       display: flex;
-      justify-self: center;
+      justify-content: center;
       align-items: center; }
       .portada h2 span {
         color: #f2e6d0; }
