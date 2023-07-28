@@ -47,15 +47,19 @@ header nav {
       color: #AD9E8E;
       display: flex;
       border-radius: 15px; }
-  .portada .buscador-redes i {
-    font-size: 25px;
-    color: #AD9E8E;
+  .portada .buscador-redes {
     display: flex;
-    flex-direction: flex-direction;
     justify-content: center;
-    align-items: center;
-    margin: 5px;
-    height: -60px; }
+    align-items: center; }
+    .portada .buscador-redes i {
+      font-size: 25px;
+      color: #AD9E8E;
+      display: flex;
+      flex-direction: flex-direction;
+      justify-content: center;
+      align-items: center;
+      margin: 5px;
+      height: -60px; }
 
 .seccion-destacados h2 {
   background-color: #aeaeae;

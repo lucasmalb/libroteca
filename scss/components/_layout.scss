@@ -32,6 +32,7 @@
         }
     }
     .buscador-redes {
+        @include flex(flex, center, center);
         i {
             font-size: 25px;
             color: #AD9E8E;
