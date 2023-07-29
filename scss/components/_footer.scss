@@ -21,10 +21,16 @@ footer {
         display: flex;
         justify-content: center;
         gap: 20px;
-
+        transition: 1s;
+        a{
         img {
             width: 35px;
             height: 35px;
+            transition: 1s;
+            &:hover{
+                transform:scale(1.2);
+            }
+            }
         }
     }
 
@@ -36,6 +42,7 @@ footer {
         a {
             text-decoration: none;
             color: rgb(89, 76, 76);
+            transition: 0.5s;
             &:hover{
                 color: orangered;
             }

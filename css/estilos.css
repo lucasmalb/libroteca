@@ -13,7 +13,9 @@ header nav {
     header nav h1 span {
       color: #f2e6d0; }
   header nav div div ul li a {
-    color: #594c4c; }
+    transition: 1s; }
+    header nav div div ul li a:hover {
+      color: orangered !important; }
 
 .boton {
   border: 2px solid #f2e6d0;
@@ -28,14 +30,15 @@ header nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
-  .portada h2 {
+  .portada .animate__heartBeat {
     color: orangered;
     font-size: 100px;
     padding: 15px;
     display: flex;
     justify-content: center;
-    align-items: center; }
-    .portada h2 span {
+    align-items: center;
+    animation-timing-function: infinite; }
+    .portada .animate__heartBeat span {
       color: #f2e6d0; }
   .portada .buscador {
     height: 400px;
@@ -51,15 +54,17 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .portada .buscador-redes i {
-      font-size: 25px;
-      color: #AD9E8E;
-      display: flex;
-      flex-direction: flex-direction;
-      justify-content: center;
-      align-items: center;
-      margin: 5px;
-      height: -60px; }
+    .portada .buscador-redes a {
+      text-decoration: none; }
+      .portada .buscador-redes a i {
+        font-size: 25px;
+        color: #AD9E8E;
+        display: flex;
+        flex-direction: flex-direction;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        height: -60px; }
 
 .seccion-destacados h2 {
   background-color: #aeaeae;
@@ -81,7 +86,10 @@ header nav {
     border: 2px solid #635d5d;
     text-align: center;
     color: #635d5d;
-    background-color: #f2e6d0; }
+    background-color: #f2e6d0;
+    transition: 1s; }
+    .seccion-destacados .contenedor-destacados .destacado:hover {
+      transform: scale(1); }
     .seccion-destacados .contenedor-destacados .destacado a img {
       width: 100%; }
     .seccion-destacados .contenedor-destacados .destacado a h3 {
@@ -121,12 +129,15 @@ header nav {
       color: #635d5d;
       background-color: #f2e6d0;
       margin: 16px auto;
-      max-width: 160px; }
+      max-width: 160px;
+      transition: 1s; }
+      .pagina-genero .seccion-libros .grilla .libro:hover {
+        transform: scale(1.1); }
       .pagina-genero .seccion-libros .grilla .libro img {
         width: 100%; }
         .pagina-genero .seccion-libros .grilla .libro img .titulo-libro {
           font-family: 'Montserrat Alternates', sans-serif;
-          font-size: 15px;
+          font-size: 10px;
           margin-top: 10px; }
 
 .position a img {
@@ -134,7 +145,10 @@ header nav {
   bottom: 50px;
   right: 20px;
   width: 50px;
-  height: 50px; }
+  height: 50px;
+  transition: 1s; }
+  .position a img:hover {
+    transform: scale(1.1); }
 
 .colores {
   background-image: url(../img/portada.png);
@@ -180,22 +194,37 @@ header nav {
         font-weight: 400px; }
 
 /*publicaciones*/
-.prueba {
+.prueba h2 {
+  text-align: left;
+  margin: 15px; }
+
+.prueba div {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .prueba div {
+  .prueba div img {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .prueba div div a {
     display: block; }
-    .prueba div h2 {
-      text-align: left; }
-    .prueba div .biografia {
-      width: 80px;
-      background-color: #cfcccb;
-      cursor: pointer;
-      margin-top: 10px; }
-      .prueba div .biografia a img {
-        width: 25px;
-        height: 25px; }
+
+.prueba div {
+  display: block; }
+  .prueba div h2 {
+    color: black; }
+  .prueba div p {
+    text-align: left;
+    display: inline-block; }
+
+.biografia {
+  width: 80px;
+  background-color: #cfcccb;
+  cursor: pointer;
+  margin-top: 10px; }
+  .biografia a img {
+    width: 25px;
+    height: 25px; }
 
 footer {
   padding: 0 1rem;
@@ -216,15 +245,20 @@ footer {
     grid-area: redes;
     display: flex;
     justify-content: center;
-    gap: 20px; }
-    footer .redes img {
+    gap: 20px;
+    transition: 1s; }
+    footer .redes a img {
       width: 35px;
-      height: 35px; }
+      height: 35px;
+      transition: 1s; }
+      footer .redes a img:hover {
+        transform: scale(1.2); }
   footer .mail {
     grid-area: mail; }
   footer h3 a {
     text-decoration: none;
-    color: #594c4c; }
+    color: #594c4c;
+    transition: 0.5s; }
     footer h3 a:hover {
       color: orangered; }
 

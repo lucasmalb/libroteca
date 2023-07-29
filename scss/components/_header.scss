@@ -14,7 +14,10 @@ header{
                     ul{
                         li{
                             a{
-                                color:rgb(89, 76, 76);
+                                transition: 1s;
+                                &:hover{
+                                    color: orangered !important;
+                                }
                             }
                         }
                     }
