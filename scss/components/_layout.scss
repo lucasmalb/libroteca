@@ -222,45 +222,48 @@
 text-align: left;
 margin:15px;
     }
-    div{
+    .psicoanalista{
         display: flex;
         justify-content: center;
         align-items: center;
         img{
-display:flex;
-justify-content: center;
-align-items: center;
+            width: 200px;
+            height: 270px;
         }
         div{
-            a{
-                display: block;
+            display: block;
+            .biografia {
+                width: 80px;
+                background-color: rgb(207, 204, 203);
+                cursor: pointer;
+                margin-top: 10px;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
             }
-        }
-    }
-    div{
-        display: block;
-        h2{
-            color: black;
-            
-        }
-        p{
-            text-align: left;
-            display: inline-block
         }
     }
 }
 
-        .biografia {
-            width: 80px;
-            background-color: rgb(207, 204, 203);
-            cursor: pointer;
-            margin-top: 10px;
-
-            a {
-                img {
-                    width: 25px;
-                    height: 25px;
-                }
-            }
+    .ficha-tecnica{
+    display: inline-block;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 10px;
+    .parrafo{
+        text-align: left;
+    }
+    .sipnosis{
+        p{
+            text-align: justify;
         }
+    }
+}
+
+
     
