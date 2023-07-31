@@ -12,10 +12,14 @@ header nav {
     font-size: 170%; }
     header nav h1 span {
       color: #f2e6d0; }
-  header nav div div ul li a {
+  header nav div div ul {
     transition: 1s; }
-    header nav div div ul li a:hover {
-      color: orangered !important; }
+    header nav div div ul:hover {
+      color: orangered; }
+    header nav div div ul li a {
+      transition: 1s; }
+      header nav div div ul li a:hover {
+        color: orangered !important; }
 
 .boton {
   border: 2px solid #f2e6d0;
@@ -198,25 +202,25 @@ header nav {
   text-align: left;
   margin: 15px; }
 
-.prueba .psicoanalista {
+.prueba .repeticion {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .prueba .psicoanalista img {
+  .prueba .repeticion img {
     width: 200px;
     height: 270px; }
-  .prueba .psicoanalista div {
+  .prueba .repeticion div {
     display: block; }
-    .prueba .psicoanalista div .biografia {
+    .prueba .repeticion div .biografia {
       width: 80px;
       background-color: #cfcccb;
       cursor: pointer;
       margin-top: 10px; }
-      .prueba .psicoanalista div .biografia a {
+      .prueba .repeticion div .biografia a {
         display: flex;
         justify-content: center;
         align-items: center; }
-        .prueba .psicoanalista div .biografia a img {
+        .prueba .repeticion div .biografia a img {
           width: 25px;
           height: 25px; }
 
@@ -226,8 +230,11 @@ header nav {
   margin: 10px; }
   .ficha-tecnica .parrafo {
     text-align: left; }
-  .ficha-tecnica .sipnosis p {
-    text-align: justify; }
+  .ficha-tecnica .sipnosis {
+    border: cornsilk 5px solid;
+    border-radius: 20px; }
+    .ficha-tecnica .sipnosis p {
+      text-align: justify; }
 
 footer {
   padding: 0 1rem;

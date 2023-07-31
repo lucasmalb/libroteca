@@ -12,6 +12,10 @@ header{
             div{
                 div{
                     ul{
+                        transition: 1s;
+                        &:hover{
+                            color: orangered;
+                        }
                         li{
                             a{
                                 transition: 1s;
