@@ -8,7 +8,7 @@
         background-attachment: fixed;
         h2{
             color: orangered;
-            font-size:62px; 
+            font-size:25px; 
             padding:15px;
             display: flex;
             justify-content: center;
@@ -55,7 +55,12 @@
     .position {
         display: none;
     }
+    .portada{
+    .animate__heartBeat {
+        font-size: 90px;
 
+    }
+    }
     .seccion-destacados {
         .contenedor-destacados {
             .destacado {
@@ -71,6 +76,7 @@
             margin: auto;
         }
     }
+
 
     .pagina-genero {
         .seccion-libros {
@@ -92,6 +98,12 @@
         }
     }
 }
+@media screen and (max-width: 481px){
+    .portada
+    .animate__heartBeat {
+        font-size: 45px;
+    }
+};
     @media screen and (max-width: 368px) {
         .seccion-video {
             iframe {

@@ -1,5 +1,5 @@
-.boton{
-    border:2px solid  rgb(242, 230, 208);
+.boton {
+    border: 2px solid rgb(242, 230, 208);
     color: #AD9E8E;
     display: flex;
     border-radius: 15px;
@@ -12,38 +12,45 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    .animate__heartBeat{
+
+    .animate__heartBeat {
         color: orangered;
         font-size: 100px;
         padding: 15px;
         @include flex(flex, center, center);
-        animation-timing-function:infinite;
-    span {
-        color: rgb(242, 230, 208)
+        animation-timing-function: infinite;
+
+        span {
+            color: rgb(242, 230, 208)
+        }
     }
-}
+
     .buscador {
         height: 400px;
         @include flex(flex, center, center);
-        .boton{
-            border:2px solid  rgb(242, 230, 208);
+
+        .boton {
+            border: 2px solid rgb(242, 230, 208);
             color: #AD9E8E;
             display: flex;
             border-radius: 15px;
         }
     }
+
     .buscador-redes {
         @include flex(flex, center, center);
-        a{
+
+        a {
             text-decoration: none;
-        i {
-            font-size: 25px;
-            color: #AD9E8E;
-            @include direction (flex,flex-direction,center,center);
-            margin: 5px;
-            height: -60px;
+
+            i {
+                font-size: 25px;
+                color: #AD9E8E;
+                @include direction (flex, flex-direction, center, center);
+                margin: 5px;
+                height: -60px;
             }
-        }    
+        }
     }
 }
 
@@ -70,15 +77,13 @@
             color: #635d5d;
             background-color: rgb(242, 230, 208);
             transition: 1s;
-            &:hover{
+            &:hover {
                 transform: scale(1.0);
-            }    
-
+            }
             a {
                 img {
                     width: 100%;
                 }
-
                 h3 {
                     min-height: 65px;
                     margin-top: 1rem;
@@ -109,20 +114,21 @@
     }
 }
 
-.pagina-genero{
-    .seccion-libros{
+.pagina-genero {
+    .seccion-libros {
         margin: 1rem 0;
-        .titulo-genero{
+        .titulo-genero {
             background-color: #aeaeae;
             color: #635d5d;
             text-align: center;
         }
-        .grilla{
+
+        .grilla {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             justify-content: center;
             align-items: center;
-            .libro{
+            .libro {
                 border: 2px solid #635d5d;
                 text-align: center;
                 color: #635d5d;
@@ -130,24 +136,26 @@
                 margin: 16px auto;
                 max-width: 160px;
                 transition: 1s;
-                &:hover{
+                &:hover {
                     transform: scale(1.1);
                 }
                 img{
                     width: 100%;
+                }
                 .titulo-libro{
                     font-family: 'Montserrat Alternates', sans-serif;
                     font-size: 10px;
                     margin-top: 10px;
                     }
                 }
-            }   
+            }
         }
     }
-}      
-.position{
+
+
+.position {
     a {
-        
+
         img {
             position: fixed;
             bottom: 50px;
@@ -155,7 +163,8 @@
             width: 50px;
             height: 50px;
             transition: 1s;
-            &:hover{
+
+            &:hover {
                 transform: scale(1.1);
             }
         }
@@ -177,94 +186,132 @@
         max-width: 400px;
         border-radius: 1em;
         padding: 3.5em 1.5em;
-            .form-container {
+
+        .form-container {
+            font-family: inherit;
+            width: 100%;
+            display: grid;
+            gap: 1em;
+            grid-auto-columns: 100%;
+
+            h2 {
                 font-family: inherit;
-                width: 100%;
-                display: grid;
-                gap: 1em;
-                grid-auto-columns: 100%;
-
-                h2 {
-                    font-family: inherit;
-                    text-align: center;
-                    font-size: 1.9rem;
-                    margin-bottom: 4em;
-                }
-
-                .form-input {
-                    font-family: inherit;
-                    font-size: 1rem;
-                    outline: none;
-                    border: none;
-                    border: 1px solid orangered;
-                    border-radius: 0.2em;
-                }
-
-                .form-cta {
-                    font-family: inherit;
-                    font-size: 1rem;
-                    background-color: #089FE0;
-                    color: white;
-                    border: none;
-                    font-weight: 200px;
-                    border-radius: 2em;
-                    cursor: pointer;
-                    font-weight: 400px;
-                }
+                text-align: center;
+                font-size: 1.9rem;
+                margin-bottom: 4em;
             }
-        }
-    }
 
+            .form-input {
+                font-family: inherit;
+                font-size: 1rem;
+                outline: none;
+                border: none;
+                border: 1px solid orangered;
+                border-radius: 0.2em;
+            }
 
-/*publicaciones*/
-.prueba{
-    h2{
-text-align: left;
-margin:15px;
-    }
-    .repeticion{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img{
-            width: 200px;
-            height: 270px;
-        }
-        div{
-            display: block;
-            .biografia {
-                width: 80px;
-                background-color: rgb(207, 204, 203);
+            .form-cta {
+                font-family: inherit;
+                font-size: 1rem;
+                background-color: #089FE0;
+                color: white;
+                border: none;
+                font-weight: 200px;
+                border-radius: 2em;
                 cursor: pointer;
-                margin-top: 10px;
-                a {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    img {
-                        width: 25px;
-                        height: 25px;
-                    }
-                }
+                font-weight: 400px;
             }
         }
     }
 }
-    .ficha-tecnica{
+
+
+/*publicaciones*/
+.prueba {
+    h2 {
+        text-align: left;
+        margin: 15px;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            img {
+                width: 200px;
+                height: 270px;
+            }
+        }
+    }
+
+.ancho{
+    display: flex;
+    .biografia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    .biografia {
+        width: 80px;
+        background-color: rgb(207, 204, 203);
+        cursor: pointer;
+        margin-top: 10px;
+        margin: 10px;
+        a {
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+    .biografia-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        background-color: rgb(207, 204, 203);
+        cursor: pointer;
+        margin-top: 10px;
+        a {
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+    }
+}
+.ancho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .biografia-1 {
+        width: 160px;
+        background-color: rgb(207, 204, 203);
+        cursor: pointer;
+        margin-top: 10px;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+.ficha-tecnica{
     display: inline-block;
     font-family: 'Montserrat Alternates', sans-serif;
     margin: 10px;
-    .parrafo{
+    .parrafo {
         text-align: left;
     }
     .sipnosis{
-        border: cornsilk 5px solid;
+        background-color: cornsilk;
+        border: cornsilk 10px solid;
         border-radius: 20px;
-        p{
+        p {
             text-align: justify;
         }
     }
 }
-
-
-    
