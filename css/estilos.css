@@ -99,7 +99,7 @@ header nav {
     .seccion-destacados .contenedor-destacados .destacado a h3 {
       min-height: 65px;
       margin-top: 1rem;
-      font-size: 22px; }
+      font-size: 20px; }
 
 .seccion-video {
   padding: 2rem 0; }
@@ -141,7 +141,7 @@ header nav {
         width: 100%; }
       .pagina-genero .seccion-libros .grilla .libro .titulo-libro {
         font-family: 'Montserrat Alternates', sans-serif;
-        font-size: 10px;
+        font-size: 20px;
         margin-top: 10px; }
 
 .position a img {
@@ -220,7 +220,6 @@ header nav {
       width: 80px;
       background-color: #cfcccb;
       cursor: pointer;
-      margin-top: 10px;
       margin: 10px; }
       .ancho .biografia .biografia a img {
         width: 25px;
@@ -231,8 +230,7 @@ header nav {
       align-items: center;
       width: 80px;
       background-color: #cfcccb;
-      cursor: pointer;
-      margin-top: 10px; }
+      cursor: pointer; }
       .ancho .biografia .biografia-2 a img {
         width: 25px;
         height: 25px; }
@@ -244,8 +242,7 @@ header nav {
   .ancho .biografia-1 {
     width: 160px;
     background-color: #cfcccb;
-    cursor: pointer;
-    margin-top: 10px; }
+    cursor: pointer; }
     .ancho .biografia-1 a {
       display: flex;
       justify-content: center;
@@ -261,6 +258,7 @@ header nav {
   .ficha-tecnica .parrafo {
     text-align: left; }
   .ficha-tecnica .sipnosis {
+    display: block;
     background-color: cornsilk;
     border: cornsilk 10px solid;
     border-radius: 20px; }
