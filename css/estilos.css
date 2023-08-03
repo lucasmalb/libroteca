@@ -174,7 +174,7 @@ header nav {
       display: grid;
       gap: 1em;
       grid-auto-columns: 100%; }
-      .colores .form .form-container h2 {
+      .colores .form .form-container .form.title {
         font-family: inherit;
         text-align: center;
         font-size: 1.9rem;
@@ -198,72 +198,73 @@ header nav {
         font-weight: 400px; }
 
 /*publicaciones*/
-.prueba h2 {
-  text-align: left;
-  margin: 15px; }
-
 .prueba div {
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  margin: 20px; }
   .prueba div img {
     width: 200px;
     height: 270px; }
+  .prueba div div {
+    display: inline; }
+    .prueba div div h2 {
+      font-family: 'Montserrat Alternates', sans-serif; }
+    .prueba div div p {
+      font-family: 'Montserrat Alternates', sans-serif; }
+  .prueba div .sipnosis {
+    display: block;
+    background-color: cornsilk;
+    border: cornsilk 10px solid;
+    border-radius: 20px; }
+    .prueba div .sipnosis p {
+      text-align: justify; }
 
-.ancho {
+.prueba .ancho {
   display: flex; }
-  .ancho .biografia {
+  .prueba .ancho .biografia {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .ancho .biografia .biografia {
+    .prueba .ancho .biografia .biografia {
       width: 80px;
       background-color: #cfcccb;
       cursor: pointer;
       margin: 10px; }
-      .ancho .biografia .biografia a img {
+      .prueba .ancho .biografia .biografia a img {
         width: 25px;
         height: 25px; }
-    .ancho .biografia .biografia-2 {
+    .prueba .ancho .biografia .biografia-2 {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 80px;
       background-color: #cfcccb;
       cursor: pointer; }
-      .ancho .biografia .biografia-2 a img {
+      .prueba .ancho .biografia .biografia-2 a img {
         width: 25px;
         height: 25px; }
 
-.ancho {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .ancho .biografia-1 {
+.prueba .ancho {
+  display: flex; }
+  .prueba .ancho .biografia-1 {
     width: 160px;
     background-color: #cfcccb;
     cursor: pointer; }
-    .ancho .biografia-1 a {
+    .prueba .ancho .biografia-1 a {
       display: flex;
       justify-content: center;
       align-items: center; }
-      .ancho .biografia-1 a img {
+      .prueba .ancho .biografia-1 a img {
         width: 25px;
         height: 25px; }
 
-.ficha-tecnica {
+.prueba .ficha-tecnica {
   display: inline-block;
   font-family: 'Montserrat Alternates', sans-serif;
   margin: 10px; }
-  .ficha-tecnica .parrafo {
+  .prueba .ficha-tecnica .parrafo {
     text-align: left; }
-  .ficha-tecnica .sipnosis {
-    display: block;
-    background-color: cornsilk;
-    border: cornsilk 10px solid;
-    border-radius: 20px; }
-    .ficha-tecnica .sipnosis p {
-      text-align: justify; }
+  .prueba .ficha-tecnica .sipnosis {
+    text-align: justify; }
 
 footer {
   padding: 0 1rem;
@@ -334,8 +335,22 @@ footer {
     .pagina-genero .seccion-libros .grilla .libro .titulo-libro {
       font-family: 'Montserrat Alternates', sans-serif; } }
 
-/*media query para mobile*/
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
+  .prueba {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .prueba .div-prueba {
+      display: block; }
+      .prueba .div-prueba h2 {
+        font-family: 'Montserrat Alternates', sans-serif; }
+      .prueba .div-prueba .parrafo {
+        text-align: justify; }
+      .prueba .div-prueba .sipnosis {
+        text-align: justify; }
+  /*media query para mobile*/ }
+
+@media screen and (max-width: 720px) and (max-width: 640px) {
   .position {
     display: none; }
   .portada .animate__heartBeat {
@@ -356,12 +371,12 @@ footer {
     footer .mail {
       text-align: center; } }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 720px) and (max-width: 481px) {
   .portada
 .animate__heartBeat {
     font-size: 45px; } }
 
-@media screen and (max-width: 368px) {
+@media screen and (max-width: 720px) and (max-width: 368px) {
   .seccion-video iframe {
     min-width: 320px;
     min-height: 250px;

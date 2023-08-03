@@ -10,12 +10,10 @@ footer {
         padding: 10px;
         font-size: 30px;
         grid-area: logo;
-
         span {
             color: rgb(242, 230, 208)
         }
     }
-
     .redes {
         grid-area: redes;
         display: flex;
@@ -33,11 +31,9 @@ footer {
             }
         }
     }
-
     .mail {
         grid-area: mail;
     }
-
     h3 {
         a {
             text-decoration: none;

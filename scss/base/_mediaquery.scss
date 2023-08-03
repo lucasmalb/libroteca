@@ -49,6 +49,40 @@
         }
     }
 }
+@media screen and (max-width: 720px){
+.prueba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+
+    }
+    .bioografia{
+        a{
+
+        }
+    .bioografia-2{
+        a{
+            
+        }
+    }    
+    }
+    .div-prueba{
+        display: block;
+        h2{
+            font-family: 'Montserrat Alternates', sans-serif;
+        }
+        .parrafo{
+            text-align: justify;
+        }
+        .sipnosis{
+            text-align: justify;
+        }
+    }
+
+}
+    
+
 
 /*media query para mobile*/
 @media screen and (max-width: 640px){
@@ -103,7 +137,7 @@
     .animate__heartBeat {
         font-size: 45px;
     }
-};
+}
     @media screen and (max-width: 368px) {
         .seccion-video {
             iframe {
@@ -114,3 +148,4 @@
             }
         }
     }
+}
