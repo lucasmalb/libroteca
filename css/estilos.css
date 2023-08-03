@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap");
 * {
   margin: 0;
@@ -198,25 +199,9 @@ header nav {
         font-weight: 400px; }
 
 /*publicaciones*/
-.prueba div {
-  display: flex;
-  margin: 20px; }
-  .prueba div img {
-    width: 200px;
-    height: 270px; }
-  .prueba div div {
-    display: inline; }
-    .prueba div div h2 {
-      font-family: 'Montserrat Alternates', sans-serif; }
-    .prueba div div p {
-      font-family: 'Montserrat Alternates', sans-serif; }
-  .prueba div .sipnosis {
-    display: block;
-    background-color: cornsilk;
-    border: cornsilk 10px solid;
-    border-radius: 20px; }
-    .prueba div .sipnosis p {
-      text-align: justify; }
+.prueba img {
+  width: 200px;
+  height: 270px; }
 
 .prueba .ancho {
   display: flex; }
@@ -243,27 +228,66 @@ header nav {
         width: 25px;
         height: 25px; }
 
-.prueba .ancho {
+.prueba div {
+  display: inline; }
+  .prueba div h2 {
+    font-family: 'Montserrat Alternates', sans-serif; }
+  .prueba div p {
+    font-family: 'Montserrat Alternates', sans-serif; }
+  .prueba div .sipnosis {
+    display: block;
+    background-color: cornsilk;
+    border: cornsilk 10px solid;
+    border-radius: 20px; }
+    .prueba div .sipnosis p {
+      text-align: justify; }
+
+.ancho {
   display: flex; }
-  .prueba .ancho .biografia-1 {
-    width: 160px;
-    background-color: #cfcccb;
-    cursor: pointer; }
-    .prueba .ancho .biografia-1 a {
+  .ancho .div-prueba .biografia {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .ancho .div-prueba .biografia .biografia {
+      width: 80px;
+      background-color: #cfcccb;
+      cursor: pointer;
+      margin: 10px; }
+      .ancho .div-prueba .biografia .biografia a img {
+        width: 25px;
+        height: 25px; }
+    .ancho .div-prueba .biografia .biografia-2 {
       display: flex;
       justify-content: center;
-      align-items: center; }
-      .prueba .ancho .biografia-1 a img {
+      align-items: center;
+      width: 80px;
+      background-color: #cfcccb;
+      cursor: pointer; }
+      .ancho .div-prueba .biografia .biografia-2 a img {
         width: 25px;
         height: 25px; }
 
-.prueba .ficha-tecnica {
+.ancho {
+  display: flex; }
+  .ancho .biografia-1 {
+    width: 160px;
+    background-color: #cfcccb;
+    cursor: pointer; }
+    .ancho .biografia-1 a {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .ancho .biografia-1 a img {
+        width: 25px;
+        height: 25px; }
+
+.ficha-tecnica {
   display: inline-block;
   font-family: 'Montserrat Alternates', sans-serif;
   margin: 10px; }
-  .prueba .ficha-tecnica .parrafo {
+  .ficha-tecnica .parrafo {
     text-align: left; }
-  .prueba .ficha-tecnica .sipnosis {
+  .ficha-tecnica .sipnosis {
     text-align: justify; }
 
 footer {
@@ -336,17 +360,19 @@ footer {
       font-family: 'Montserrat Alternates', sans-serif; } }
 
 @media screen and (max-width: 720px) {
-  .prueba {
+  .prueba .div-prueba {
     display: flex;
-    justify-content: center;
-    align-items: center; }
-    .prueba .div-prueba {
-      display: block; }
-      .prueba .div-prueba h2 {
+    flex-flow: wrap;
+    justify-content: center; }
+    .prueba .div-prueba .ancho {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .prueba .div-prueba .ancho .biografia´ h2 {
         font-family: 'Montserrat Alternates', sans-serif; }
-      .prueba .div-prueba .parrafo {
+      .prueba .div-prueba .ancho .biografia´ .parrafo {
         text-align: justify; }
-      .prueba .div-prueba .sipnosis {
+      .prueba .div-prueba .ancho .biografia´ .sipnosis {
         text-align: justify; }
   /*media query para mobile*/ }
 

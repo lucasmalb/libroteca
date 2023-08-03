@@ -77,13 +77,16 @@
             color: #635d5d;
             background-color: rgb(242, 230, 208);
             transition: 1s;
+
             &:hover {
                 transform: scale(1.0);
             }
+
             a {
                 img {
                     width: 100%;
                 }
+
                 h3 {
                     min-height: 65px;
                     margin-top: 1rem;
@@ -117,6 +120,7 @@
 .pagina-genero {
     .seccion-libros {
         margin: 1rem 0;
+
         .titulo-genero {
             background-color: #aeaeae;
             color: #635d5d;
@@ -128,6 +132,7 @@
             grid-template-columns: 1fr 1fr 1fr 1fr;
             justify-content: center;
             align-items: center;
+
             .libro {
                 border: 2px solid #635d5d;
                 text-align: center;
@@ -136,21 +141,24 @@
                 margin: 16px auto;
                 max-width: 160px;
                 transition: 1s;
+
                 &:hover {
                     transform: scale(1.1);
                 }
-                img{
+
+                img {
                     width: 100%;
                 }
-                .titulo-libro{
+
+                .titulo-libro {
                     font-family: 'Montserrat Alternates', sans-serif;
                     font-size: 20px;
                     margin-top: 10px;
-                    }
                 }
             }
         }
     }
+}
 
 
 .position {
@@ -162,6 +170,7 @@
             width: 50px;
             height: 50px;
             transition: 1s;
+
             &:hover {
                 transform: scale(1.1);
             }
@@ -175,6 +184,7 @@
     font-family: inherit;
     width: 100%;
     display: flex;
+
     .form {
         font-family: inherit;
         background-color: white;
@@ -183,18 +193,21 @@
         max-width: 400px;
         border-radius: 1em;
         padding: 3.5em 1.5em;
+
         .form-container {
             font-family: inherit;
             width: 100%;
             display: grid;
             gap: 1em;
             grid-auto-columns: 100%;
-            .form.title{
+
+            .form.title {
                 font-family: inherit;
                 text-align: center;
                 font-size: 1.9rem;
                 margin-bottom: 4em;
             }
+
             .form-input {
                 font-family: inherit;
                 font-size: 1rem;
@@ -203,6 +216,7 @@
                 border: 1px solid orangered;
                 border-radius: 0.2em;
             }
+
             .form-cta {
                 font-family: inherit;
                 font-size: 1rem;
@@ -217,82 +231,150 @@
         }
     }
 }
+
 /*publicaciones*/
 .prueba {
-    div{
-        display: flex;
-        margin: 20px;
-        img {
-            width: 200px;
-            height: 270px;
-        }
-        div{
-            display: inline;
-            h2{
-                font-family: 'Montserrat Alternates', sans-serif;
+    img {
+        width: 200px;
+        height: 270px;
+    }
 
+    .ancho {
+        display: flex;
+
+        .biografia {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .biografia {
+                width: 80px;
+                background-color: rgb(207, 204, 203);
+                cursor: pointer;
+                margin: 10px;
+
+                a {
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
             }
-            p{
-                font-family: 'Montserrat Alternates', sans-serif;
-            }  
+
+            .biografia-2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80px;
+                background-color: rgb(207, 204, 203);
+                cursor: pointer;
+
+                a {
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
             }
-        .sipnosis{
+        }
+    }
+
+    div {
+        display: inline;
+
+        h2 {
+            font-family: 'Montserrat Alternates', sans-serif;
+
+        }
+
+        p {
+            font-family: 'Montserrat Alternates', sans-serif;
+        }
+
+        .sipnosis {
             display: block;
             background-color: cornsilk;
             border: cornsilk 10px solid;
             border-radius: 20px;
-        p {
-            text-align: justify;
-        }
-    }
-}
-    
 
-.ancho{
-    display: flex;
-    .biografia{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    .biografia {
-        width: 80px;
-        background-color: rgb(207, 204, 203);
-        cursor: pointer;
-        margin: 10px;
-        a {
-            img {
-                width: 25px;
-                height: 25px;
+            p {
+                text-align: justify;
             }
         }
-    }
-    .biografia-2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80px;
-        background-color: rgb(207, 204, 203);
-        cursor: pointer;
-        a {
-            img {
-                width: 25px;
-                height: 25px;
-            }
-        }
-    }
     }
 }
-.ancho{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ancho {
+    display: flex;
+    .div-prueba{
+        .biografia {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .biografia {
+                width: 80px;
+                background-color: rgb(207, 204, 203);
+                cursor: pointer;
+                margin: 10px;
+    
+                a {
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+    
+            .biografia-2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80px;
+                background-color: rgb(207, 204, 203);
+                cursor: pointer;
+    
+                a {
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ancho {
     display: flex;
 
     .biografia-1 {
         width: 160px;
         background-color: rgb(207, 204, 203);
         cursor: pointer;
+
         a {
             display: flex;
             justify-content: center;
             align-items: center;
+
             img {
                 width: 25px;
                 height: 25px;
@@ -300,16 +382,18 @@
         }
     }
 }
-.ficha-tecnica{
+
+.ficha-tecnica {
     display: inline-block;
     font-family: 'Montserrat Alternates', sans-serif;
     margin: 10px;
+
     .parrafo {
         text-align: left;
     }
-    .sipnosis{
+
+    .sipnosis {
         text-align: justify;
 
-        }
     }
 }

@@ -51,35 +51,28 @@
 }
 @media screen and (max-width: 720px){
 .prueba{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img{
-
-    }
-    .bioografia{
-        a{
-
-        }
-    .bioografia-2{
-        a{
-            
-        }
-    }    
-    }
     .div-prueba{
-        display: block;
-        h2{
-            font-family: 'Montserrat Alternates', sans-serif;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        .ancho{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .biografia´{
+                h2{
+                    font-family: 'Montserrat Alternates', sans-serif;
+                }
+                .parrafo{
+                    text-align: justify;
+                }
+                .sipnosis{
+                    text-align: justify;
+                }
+            }
         }
-        .parrafo{
-            text-align: justify;
-        }
-        .sipnosis{
-            text-align: justify;
-        }
+        
     }
-
 }
     
 
