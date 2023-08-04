@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap");
 * {
   margin: 0;
@@ -227,20 +226,19 @@ header nav {
       .prueba .ancho .biografia .biografia-2 a img {
         width: 25px;
         height: 25px; }
-
-.prueba div {
-  display: inline; }
-  .prueba div h2 {
-    font-family: 'Montserrat Alternates', sans-serif; }
-  .prueba div p {
-    font-family: 'Montserrat Alternates', sans-serif; }
-  .prueba div .sipnosis {
-    display: block;
-    background-color: cornsilk;
-    border: cornsilk 10px solid;
-    border-radius: 20px; }
-    .prueba div .sipnosis p {
-      text-align: justify; }
+  .prueba .ancho div {
+    display: inline; }
+    .prueba .ancho div h2 {
+      font-family: 'Montserrat Alternates', sans-serif; }
+    .prueba .ancho div p {
+      font-family: 'Montserrat Alternates', sans-serif; }
+    .prueba .ancho div .sipnosis {
+      display: block;
+      background-color: cornsilk;
+      border: cornsilk 10px solid;
+      border-radius: 20px; }
+      .prueba .ancho div .sipnosis p {
+        text-align: justify; }
 
 .ancho {
   display: flex; }
@@ -361,22 +359,27 @@ footer {
 
 @media screen and (max-width: 720px) {
   .prueba .div-prueba {
+    width: 100%;
     display: flex;
-    flex-flow: wrap;
-    justify-content: center; }
-    .prueba .div-prueba .ancho {
+    flex-direction: column;
+    align-items: center; }
+    .prueba .div-prueba .ancho .h2 {
       display: flex;
       justify-content: center;
       align-items: center; }
-      .prueba .div-prueba .ancho .biografia´ h2 {
+      .prueba .div-prueba .ancho .h2 h2 {
         font-family: 'Montserrat Alternates', sans-serif; }
-      .prueba .div-prueba .ancho .biografia´ .parrafo {
+      .prueba .div-prueba .ancho .h2 .parrafo {
         text-align: justify; }
-      .prueba .div-prueba .ancho .biografia´ .sipnosis {
-        text-align: justify; }
-  /*media query para mobile*/ }
+      .prueba .div-prueba .ancho .h2 .sipnosis {
+        text-align: justify;
+        margin-right: 135px;
+        background-color: cornsilk;
+        border: cornsilk 5px solid;
+        border-radius: 20px; } }
 
-@media screen and (max-width: 720px) and (max-width: 640px) {
+/*media query para mobile*/
+@media screen and (max-width: 640px) {
   .position {
     display: none; }
   .portada .animate__heartBeat {
@@ -397,12 +400,12 @@ footer {
     footer .mail {
       text-align: center; } }
 
-@media screen and (max-width: 720px) and (max-width: 481px) {
+@media screen and (max-width: 481px) {
   .portada
 .animate__heartBeat {
     font-size: 45px; } }
 
-@media screen and (max-width: 720px) and (max-width: 368px) {
+@media screen and (max-width: 368px) {
   .seccion-video iframe {
     min-width: 320px;
     min-height: 250px;

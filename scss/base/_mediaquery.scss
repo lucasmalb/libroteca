@@ -52,33 +52,36 @@
 @media screen and (max-width: 720px){
 .prueba{
     .div-prueba{
+        width: 100%;
         display: flex;
-        flex-flow: wrap;
-        justify-content: center;
-        .ancho{
+        flex-direction: column;
+        align-items: center;
+        .h2{
             display: flex;
             justify-content: center;
             align-items: center;
-            .biografia´{
-                h2{
-                    font-family: 'Montserrat Alternates', sans-serif;
-                }
-                .parrafo{
-                    text-align: justify;
-                }
-                .sipnosis{
-                    text-align: justify;
-                }
-            }
         }
-        
-    }
+    }   
 }
+
     
 
 
 /*media query para mobile*/
 @media screen and (max-width: 640px){
+    .prueba{
+        .div-prueba{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .h2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }   
+    }
     .position {
         display: none;
     }
@@ -126,19 +129,19 @@
     }
 }
 @media screen and (max-width: 481px){
-    .portada
-    .animate__heartBeat {
-        font-size: 45px;
+    .portada{
+        .animate__heartBeat {
+            font-size: 45px;
     }
 }
-    @media screen and (max-width: 368px) {
-        .seccion-video {
-            iframe {
-                min-width: 320px;
-                min-height: 250px;
-                display: block;
-                margin: auto;
-            }
+}
+@media screen and (max-width: 368px){
+    .seccion-video{
+        iframe{
+        min-width: 320px;
+        min-height: 250px;
+        display: block;
+        margin: auto;
         }
     }
 }
