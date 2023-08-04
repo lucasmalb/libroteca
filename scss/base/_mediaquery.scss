@@ -63,8 +63,7 @@
         }
     }   
 }
-
-    
+}   
 
 
 /*media query para mobile*/
@@ -82,14 +81,14 @@
             }
         }   
     }
+
     .position {
         display: none;
     }
     .portada{
     .animate__heartBeat {
         font-size: 90px;
-
-    }
+        }
     }
     .seccion-destacados {
         .contenedor-destacados {
@@ -132,8 +131,8 @@
     .portada{
         .animate__heartBeat {
             font-size: 45px;
+        }
     }
-}
 }
 @media screen and (max-width: 368px){
     .seccion-video{

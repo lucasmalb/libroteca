@@ -233,74 +233,93 @@
 }
 
 /*publicaciones*/
-.prueba {
-    img {
-        width: 200px;
-        height: 270px;
-    }
-    .ancho {
+
+.psico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .tarjeta {
         display: flex;
-        .biografia {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 420px;
+        border-radius: 15px;
+        font-family: sans-serif;
+        .cuerpo {
             display: flex;
             justify-content: center;
-            align-items: center;
-
-            .biografia {
-                width: 80px;
-                background-color: rgb(207, 204, 203);
-                cursor: pointer;
-                margin: 10px;
-
-                a {
-                    img {
-                        width: 25px;
-                        height: 25px;
-                    }
+            align-items:center;
+            padding: 10px;
+            img{
+                border: 1px solid lightgray;
+                box-shadow: 2px 2px 8px 4px #d3d3d3d1;
                 }
             }
-
-            .biografia-2 {
+            div{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 80px;
-                background-color: rgb(207, 204, 203);
-                cursor: pointer;
-
-                a {
-                    img {
-                        width: 25px;
-                        height: 25px;
+                .pie{
+                    display: inline-block;
+                    width: 80px;
+                    text-align: center;
+                    background-color: #cfcccb;
+                    cursor: pointer;
+                    margin: 10px;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        img{
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+            div{
+                .pie2{
+                    background: #cfcccb;
+                    width: 160px;
+                    cursor: pointer;
+                    text-align: center;
+                    a{
+                        img{
+                            width: 25px;
+                            height: 25px;
+                        }
+                    } 
+                    
+                }
+            }
+            .titulo{
+                    font-size: 24px;
+                    padding: 10px 10px 0 10px;
+                    .parrafo {
+                        text-align: left;
+                    }
+                    .sipnosis {
+                        text-align: justify;
+                        font-size: 20px;
+                        background-color: cornsilk;
+                        border: cornsilk 5px solid;
+                        border-radius: 20px;
+                        text-align: justify;
                     }
                 }
             }
         }
-    
-    div {
-        display: inline;
-
-        h2 {
-            font-family: 'Montserrat Alternates', sans-serif;
-
-        }
-
-        p {
-            font-family: 'Montserrat Alternates', sans-serif;
-        }
-
-        .sipnosis {
-            display: block;
-            background-color: cornsilk;
-            border: cornsilk 10px solid;
-            border-radius: 20px;
-
-            p {
-                text-align: justify;
-            }
-        }
-    }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

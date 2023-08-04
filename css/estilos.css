@@ -198,47 +198,62 @@ header nav {
         font-weight: 400px; }
 
 /*publicaciones*/
-.prueba img {
-  width: 200px;
-  height: 270px; }
-
-.prueba .ancho {
-  display: flex; }
-  .prueba .ancho .biografia {
+.psico {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .psico .tarjeta {
     display: flex;
-    justify-content: center;
-    align-items: center; }
-    .prueba .ancho .biografia .biografia {
-      width: 80px;
-      background-color: #cfcccb;
-      cursor: pointer;
-      margin: 10px; }
-      .prueba .ancho .biografia .biografia a img {
-        width: 25px;
-        height: 25px; }
-    .prueba .ancho .biografia .biografia-2 {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 420px;
+    border-radius: 15px;
+    font-family: sans-serif; }
+    .psico .tarjeta .cuerpo {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 80px;
-      background-color: #cfcccb;
-      cursor: pointer; }
-      .prueba .ancho .biografia .biografia-2 a img {
-        width: 25px;
-        height: 25px; }
-  .prueba .ancho div {
-    display: inline; }
-    .prueba .ancho div h2 {
-      font-family: 'Montserrat Alternates', sans-serif; }
-    .prueba .ancho div p {
-      font-family: 'Montserrat Alternates', sans-serif; }
-    .prueba .ancho div .sipnosis {
-      display: block;
-      background-color: cornsilk;
-      border: cornsilk 10px solid;
-      border-radius: 20px; }
-      .prueba .ancho div .sipnosis p {
-        text-align: justify; }
+      padding: 10px; }
+      .psico .tarjeta .cuerpo img {
+        border: 1px solid lightgray;
+        box-shadow: 2px 2px 8px 4px #d3d3d3d1; }
+    .psico .tarjeta div {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .psico .tarjeta div .pie {
+        display: inline-block;
+        width: 80px;
+        text-align: center;
+        background-color: #cfcccb;
+        cursor: pointer;
+        margin: 10px; }
+        .psico .tarjeta div .pie a {
+          text-decoration: none;
+          color: white; }
+          .psico .tarjeta div .pie a img {
+            width: 25px;
+            height: 25px; }
+        .psico .tarjeta div .pie div .pie2 {
+          background: #cfcccb;
+          width: 160px;
+          cursor: pointer;
+          text-align: center; }
+          .psico .tarjeta div .pie div .pie2 a img {
+            width: 25px;
+            height: 25px; }
+        .psico .tarjeta div .pie .titulo {
+          font-size: 24px;
+          padding: 10px 10px 0 10px; }
+          .psico .tarjeta div .pie .titulo .parrafo {
+            text-align: left; }
+          .psico .tarjeta div .pie .titulo .sipnosis {
+            text-align: justify;
+            font-size: 20px;
+            background-color: cornsilk;
+            border: cornsilk 5px solid;
+            border-radius: 20px;
+            text-align: justify; }
 
 .ancho {
   display: flex; }
@@ -363,23 +378,22 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .prueba .div-prueba .ancho .h2 {
+    .prueba .div-prueba .h2 {
       display: flex;
       justify-content: center;
-      align-items: center; }
-      .prueba .div-prueba .ancho .h2 h2 {
-        font-family: 'Montserrat Alternates', sans-serif; }
-      .prueba .div-prueba .ancho .h2 .parrafo {
-        text-align: justify; }
-      .prueba .div-prueba .ancho .h2 .sipnosis {
-        text-align: justify;
-        margin-right: 135px;
-        background-color: cornsilk;
-        border: cornsilk 5px solid;
-        border-radius: 20px; } }
+      align-items: center; } }
 
 /*media query para mobile*/
 @media screen and (max-width: 640px) {
+  .prueba .div-prueba {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .prueba .div-prueba .h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
   .position {
     display: none; }
   .portada .animate__heartBeat {
@@ -401,8 +415,7 @@ footer {
       text-align: center; } }
 
 @media screen and (max-width: 481px) {
-  .portada
-.animate__heartBeat {
+  .portada .animate__heartBeat {
     font-size: 45px; } }
 
 @media screen and (max-width: 368px) {
