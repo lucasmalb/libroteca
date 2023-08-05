@@ -198,110 +198,49 @@ header nav {
         font-weight: 400px; }
 
 /*publicaciones*/
-.psico {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .psico .tarjeta {
+.seccion-detalle {
+  padding: 2rem 4rem; }
+  .seccion-detalle .detalle-libro {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 420px;
-    border-radius: 15px;
-    font-family: sans-serif; }
-    .psico .tarjeta .cuerpo {
+    flex-wrap: wrap; }
+    .seccion-detalle .detalle-libro .contenedor-img .img-libro {
+      min-width: 220px; }
+    .seccion-detalle .detalle-libro .contenedor-img .contenedor-archivos {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px; }
-      .psico .tarjeta .cuerpo img {
-        border: 1px solid lightgray;
-        box-shadow: 2px 2px 8px 4px #d3d3d3d1; }
-    .psico .tarjeta div {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .psico .tarjeta div .pie {
-        display: inline-block;
-        width: 80px;
-        text-align: center;
-        background-color: #cfcccb;
-        cursor: pointer;
-        margin: 10px; }
-        .psico .tarjeta div .pie a {
-          text-decoration: none;
-          color: white; }
-          .psico .tarjeta div .pie a img {
-            width: 25px;
-            height: 25px; }
-        .psico .tarjeta div .pie div .pie2 {
-          background: #cfcccb;
-          width: 160px;
-          cursor: pointer;
-          text-align: center; }
-          .psico .tarjeta div .pie div .pie2 a img {
-            width: 25px;
-            height: 25px; }
-        .psico .tarjeta div .pie .titulo {
-          font-size: 24px;
-          padding: 10px 10px 0 10px; }
-          .psico .tarjeta div .pie .titulo .parrafo {
-            text-align: left; }
-          .psico .tarjeta div .pie .titulo .sipnosis {
-            text-align: justify;
-            font-size: 20px;
-            background-color: cornsilk;
-            border: cornsilk 5px solid;
-            border-radius: 20px;
-            text-align: justify; }
-
-.ancho {
-  display: flex; }
-  .ancho .div-prueba .biografia {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .ancho .div-prueba .biografia .biografia {
-      width: 80px;
+      justify-content: space-around;
       background-color: #cfcccb;
-      cursor: pointer;
-      margin: 10px; }
-      .ancho .div-prueba .biografia .biografia a img {
-        width: 25px;
-        height: 25px; }
-    .ancho .div-prueba .biografia .biografia-2 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 80px;
+      margin: .5rem 0;
+      padding: .5rem; }
+      .seccion-detalle .detalle-libro .contenedor-img .contenedor-archivos a:hover {
+        opacity: .5; }
+      .seccion-detalle .detalle-libro .contenedor-img .contenedor-archivos a img {
+        width: 35px; }
+    .seccion-detalle .detalle-libro .contenedor-img .contenedor-drive {
       background-color: #cfcccb;
-      cursor: pointer; }
-      .ancho .div-prueba .biografia .biografia-2 a img {
-        width: 25px;
-        height: 25px; }
-
-.ancho {
-  display: flex; }
-  .ancho .biografia-1 {
-    width: 160px;
-    background-color: #cfcccb;
-    cursor: pointer; }
-    .ancho .biografia-1 a {
+      padding: .5rem;
       display: flex;
-      justify-content: center;
-      align-items: center; }
-      .ancho .biografia-1 a img {
-        width: 25px;
-        height: 25px; }
-
-.ficha-tecnica {
-  display: inline-block;
-  font-family: 'Montserrat Alternates', sans-serif;
-  margin: 10px; }
-  .ficha-tecnica .parrafo {
-    text-align: left; }
-  .ficha-tecnica .sipnosis {
-    text-align: justify; }
+      justify-content: center; }
+      .seccion-detalle .detalle-libro .contenedor-img .contenedor-drive a {
+        display: block;
+        width: 35px;
+        transition: all .3s ease; }
+        .seccion-detalle .detalle-libro .contenedor-img .contenedor-drive a:hover {
+          opacity: .5; }
+        .seccion-detalle .detalle-libro .contenedor-img .contenedor-drive a img {
+          width: 35px; }
+    .seccion-detalle .detalle-libro .contenedor-img .contenedor-descripcion {
+      margin-left: 3rem; }
+      .seccion-detalle .detalle-libro .contenedor-img .contenedor-descripcion h2 {
+        color: orangered;
+        margin-bottom: 1rem; }
+    .seccion-detalle .detalle-libro .contenedor-img .libro-sipnosis {
+      width: 100%;
+      margin: 1rem 0;
+      background-color: #f1f1f1;
+      padding: 1rem; }
+      .seccion-detalle .detalle-libro .contenedor-img .libro-sipnosis h3 {
+        margin-bottom: 2rem;
+        color: orangered; }
 
 footer {
   padding: 0 1rem;
@@ -372,28 +311,8 @@ footer {
     .pagina-genero .seccion-libros .grilla .libro .titulo-libro {
       font-family: 'Montserrat Alternates', sans-serif; } }
 
-@media screen and (max-width: 720px) {
-  .prueba .div-prueba {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .prueba .div-prueba .h2 {
-      display: flex;
-      justify-content: center;
-      align-items: center; } }
-
 /*media query para mobile*/
 @media screen and (max-width: 640px) {
-  .prueba .div-prueba {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .prueba .div-prueba .h2 {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
   .position {
     display: none; }
   .portada .animate__heartBeat {
@@ -407,6 +326,16 @@ footer {
     margin: auto; }
   .pagina-genero .seccion-libros .grilla {
     grid-template-columns: 1fr; }
+  .secion-detalle {
+    padding: 1rem; }
+    .secion-detalle .detalle-libro {
+      flex-direction: column; }
+      .secion-detalle .detalle-libro .contenedor-img {
+        max-width: 375px;
+        text-align: center;
+        margin: 2rem auto; }
+    .secion-detalle .contenedor-descripcion {
+      margin-left: 0; }
   footer {
     grid-template-areas: "logo logo logo" "redes redes redes" "mail mail mail"; }
     footer .libro {
@@ -417,6 +346,10 @@ footer {
 @media screen and (max-width: 481px) {
   .portada .animate__heartBeat {
     font-size: 45px; } }
+
+@media screen and (max-widt: 442px) {
+  .form {
+    max-width: 300px; } }
 
 @media screen and (max-width: 368px) {
   .seccion-video iframe {
