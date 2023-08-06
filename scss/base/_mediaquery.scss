@@ -85,7 +85,7 @@
             }
         }
     }
-    .secion-detalle{
+    .seccion-detalle{
         padding: 1rem;
         .detalle-libro{
             flex-direction: column;
@@ -121,11 +121,12 @@
     }
 }
 
-@media screen and (max-widt:442px){
-    .form{
-        max-width: 300px;
+
+@media screen and (max-width: 442px) {
+    .form {
+        max-width: 300px; 
+        } 
     }
-}
 @media screen and (max-width: 368px){
     .seccion-video{
         iframe{

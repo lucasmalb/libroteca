@@ -2,7 +2,7 @@
 footer {
     padding: 0 1rem;
     background-color: #aeaeae;
-    @include flex (flex,space-between,center);
+    @include flex(flex,space-between,center);
     display: grid;
     grid-template-areas: "logo redes mail";
     h2 {

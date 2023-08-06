@@ -215,30 +215,30 @@ header nav {
         opacity: .5; }
       .seccion-detalle .detalle-libro .contenedor-img .contenedor-archivos a img {
         width: 35px; }
-    .seccion-detalle .detalle-libro .contenedor-img .contenedor-drive {
+    .seccion-detalle .detalle-libro .contenedor-drive {
       background-color: #cfcccb;
       padding: .5rem;
       display: flex;
       justify-content: center; }
-      .seccion-detalle .detalle-libro .contenedor-img .contenedor-drive a {
+      .seccion-detalle .detalle-libro .contenedor-drive a {
         display: block;
         width: 35px;
         transition: all .3s ease; }
-        .seccion-detalle .detalle-libro .contenedor-img .contenedor-drive a:hover {
+        .seccion-detalle .detalle-libro .contenedor-drive a:hover {
           opacity: .5; }
-        .seccion-detalle .detalle-libro .contenedor-img .contenedor-drive a img {
+        .seccion-detalle .detalle-libro .contenedor-drive a img {
           width: 35px; }
-    .seccion-detalle .detalle-libro .contenedor-img .contenedor-descripcion {
+    .seccion-detalle .detalle-libro .contenedor-descripcion {
       margin-left: 3rem; }
-      .seccion-detalle .detalle-libro .contenedor-img .contenedor-descripcion h2 {
+      .seccion-detalle .detalle-libro .contenedor-descripcion h2 {
         color: orangered;
         margin-bottom: 1rem; }
-    .seccion-detalle .detalle-libro .contenedor-img .libro-sipnosis {
+    .seccion-detalle .detalle-libro .libro-sinopsis {
       width: 100%;
       margin: 1rem 0;
       background-color: #f1f1f1;
       padding: 1rem; }
-      .seccion-detalle .detalle-libro .contenedor-img .libro-sipnosis h3 {
+      .seccion-detalle .detalle-libro .libro-sinopsis h3 {
         margin-bottom: 2rem;
         color: orangered; }
 
@@ -326,15 +326,15 @@ footer {
     margin: auto; }
   .pagina-genero .seccion-libros .grilla {
     grid-template-columns: 1fr; }
-  .secion-detalle {
+  .seccion-detalle {
     padding: 1rem; }
-    .secion-detalle .detalle-libro {
+    .seccion-detalle .detalle-libro {
       flex-direction: column; }
-      .secion-detalle .detalle-libro .contenedor-img {
+      .seccion-detalle .detalle-libro .contenedor-img {
         max-width: 375px;
         text-align: center;
         margin: 2rem auto; }
-    .secion-detalle .contenedor-descripcion {
+    .seccion-detalle .contenedor-descripcion {
       margin-left: 0; }
   footer {
     grid-template-areas: "logo logo logo" "redes redes redes" "mail mail mail"; }
@@ -347,7 +347,7 @@ footer {
   .portada .animate__heartBeat {
     font-size: 45px; } }
 
-@media screen and (max-widt: 442px) {
+@media screen and (max-width: 442px) {
   .form {
     max-width: 300px; } }
 
