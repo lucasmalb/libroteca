@@ -116,33 +116,35 @@ header nav {
     display: block;
     margin: auto; }
 
-.pagina-genero .seccion-libros {
-  margin: 1rem 0; }
-  .pagina-genero .seccion-libros .titulo-genero {
-    background-color: #aeaeae;
-    color: #635d5d;
-    text-align: center; }
-  .pagina-genero .seccion-libros .grilla {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center; }
-    .pagina-genero .seccion-libros .grilla .libro {
-      border: 2px solid #635d5d;
-      text-align: center;
+.pagina-genero {
+  background-color: #f0e5da; }
+  .pagina-genero .seccion-libros {
+    margin: 1rem 0; }
+    .pagina-genero .seccion-libros .titulo-genero {
+      background-color: #aeaeae;
       color: #635d5d;
-      background-color: #f2e6d0;
-      margin: 16px auto;
-      max-width: 160px;
-      transition: 1s; }
-      .pagina-genero .seccion-libros .grilla .libro:hover {
-        transform: scale(1.1); }
-      .pagina-genero .seccion-libros .grilla .libro img {
-        width: 100%; }
-      .pagina-genero .seccion-libros .grilla .libro .titulo-libro {
-        font-family: 'Montserrat Alternates', sans-serif;
-        font-size: 20px;
-        margin-top: 10px; }
+      text-align: center; }
+    .pagina-genero .seccion-libros .grilla {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-content: center;
+      align-items: center; }
+      .pagina-genero .seccion-libros .grilla .libro {
+        border: 2px solid #635d5d;
+        text-align: center;
+        color: #635d5d;
+        background-color: #f2e6d0;
+        margin: 16px auto;
+        max-width: 160px;
+        transition: 1s; }
+        .pagina-genero .seccion-libros .grilla .libro:hover {
+          transform: scale(1.1); }
+        .pagina-genero .seccion-libros .grilla .libro img {
+          width: 100%; }
+        .pagina-genero .seccion-libros .grilla .libro .titulo-libro {
+          font-family: 'Montserrat Alternates', sans-serif;
+          font-size: 20px;
+          margin-top: 10px; }
 
 .position a img {
   position: fixed;

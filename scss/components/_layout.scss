@@ -77,11 +77,9 @@
             color: #635d5d;
             background-color: rgb(242, 230, 208);
             transition: 1s;
-
             &:hover {
                 transform: scale(1.0);
             }
-
             a {
                 img {
                     width: 100%;
@@ -118,6 +116,7 @@
 }
 
 .pagina-genero {
+    background-color:#f0e5da;
     .seccion-libros {
         margin: 1rem 0;
 
