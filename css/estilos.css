@@ -32,7 +32,7 @@ header nav {
   background-attachment: fixed; }
   .portada .animate__heartBeat {
     color: orangered;
-    font-size: 100px, 25px, 20px, 1.9rem, 1rem, 1;
+    font-size: 100px;
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -57,7 +57,7 @@ header nav {
     .portada .buscador-redes a {
       text-decoration: none; }
       .portada .buscador-redes a i {
-        font-size: 100px, 25px, 20px, 1.9rem, 1rem, 2;
+        font-size: 25px;
         color: #AD9E8E;
         display: flex;
         flex-direction: flex-direction;
@@ -89,13 +89,13 @@ header nav {
     background-color: #f2e6d0;
     transition: 1s; }
     .seccion-destacados .contenedor-destacados .destacado:hover {
-      transform: scale(1); }
+      transform: scale(1.1); }
     .seccion-destacados .contenedor-destacados .destacado a img {
       width: 100%; }
     .seccion-destacados .contenedor-destacados .destacado a h3 {
       min-height: 65px;
       margin-top: 1rem;
-      font-size: 100px, 25px, 20px, 1.9rem, 1rem, 3; }
+      font-size: 10px; }
 
 .seccion-video {
   padding: 2rem 0; }
@@ -131,15 +131,15 @@ header nav {
         color: #635d5d;
         background-color: #f2e6d0;
         margin: 16px auto;
-        max-width: 160px;
+        max-width: 163px;
         transition: 1s; }
         .pagina-genero .seccion-libros .grilla .libro:hover {
           transform: scale(1.1); }
-        .pagina-genero .seccion-libros .grilla .libro img {
+        .pagina-genero .seccion-libros .grilla .libro a img {
           width: 100%; }
-        .pagina-genero .seccion-libros .grilla .libro .titulo-libro {
+        .pagina-genero .seccion-libros .grilla .libro a .titulo-libro {
           font-family: 'Montserrat Alternates', sans-serif;
-          font-size: 100px, 25px, 20px, 1.9rem, 1rem, 3;
+          font-size: 10px;
           margin-top: 10px; }
 
 .position a img {
@@ -175,18 +175,18 @@ header nav {
       .colores .form .form-container .form.title {
         font-family: inherit;
         text-align: center;
-        font-size: 100px, 25px, 20px, 1.9rem, 1rem, 4;
+        font-size: 1.9rem;
         margin-bottom: 4em; }
       .colores .form .form-container .form-input {
         font-family: inherit;
-        font-size: 100px, 25px, 20px, 1.9rem, 1rem 0.5;
+        font-size: 1rem;
         outline: none;
         border: none;
         border: 1px solid orangered;
         border-radius: 0.2em; }
       .colores .form .form-container .form-cta {
         font-family: inherit;
-        font-size: 100px, 25px, 20px, 1.9rem, 1rem, 5;
+        font-size: 1rem;
         background-color: #089FE0;
         color: white;
         border: none;
