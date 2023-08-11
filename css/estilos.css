@@ -81,7 +81,8 @@ header nav {
   justify-content: space-around;
   align-items: center; }
   .seccion-destacados .contenedor-destacados .destacado {
-    max-width: 180px;
+    width: 170px;
+    height: 320px;
     text-align: center;
     border: 2px solid #635d5d;
     text-align: center;
@@ -131,13 +132,18 @@ header nav {
         color: #635d5d;
         background-color: #f2e6d0;
         margin: 16px auto;
-        max-width: 163px;
+        width: 165px;
+        height: 350px;
         transition: 1s; }
         .pagina-genero .seccion-libros .grilla .libro:hover {
           transform: scale(1.1); }
         .pagina-genero .seccion-libros .grilla .libro a img {
           width: 100%; }
         .pagina-genero .seccion-libros .grilla .libro a .titulo-libro {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
           font-family: 'Montserrat Alternates', sans-serif;
           font-size: 10px;
           margin-top: 10px; }

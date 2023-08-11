@@ -70,7 +70,8 @@
         @include flex (flex, space-around, center);
 
         .destacado {
-            max-width: 180px;
+            width: 170px;
+            height: 320px;
             text-align: center;
             border: 2px solid #635d5d;
             text-align: center;
@@ -139,7 +140,8 @@
                 color: #635d5d;
                 background-color: rgb(242, 230, 208);
                 margin: 16px auto;
-                max-width: 163px;
+                width: 165px;
+                height: 350px;
                 transition: 1s;
                 &:hover {
                     transform: scale(1.1);
@@ -149,6 +151,10 @@
                             width: 100%;
                         }
                         .titulo-libro {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
                             font-family: 'Montserrat Alternates', sans-serif;
                             font-size:nth($font-size,3);
                             margin-top: 10px;
