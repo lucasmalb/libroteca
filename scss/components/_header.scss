@@ -11,6 +11,10 @@ header{
             }
             div{
                 div{
+                    .d-flex{
+                        display: flex;
+                        align-items: center;
+                    }
                     ul{
                         li{
                             a{
