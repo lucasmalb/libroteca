@@ -6,6 +6,10 @@ $font-size:
 1rem,
 20px;
 
+%flex{
+    display: flex;
+    justify-content: space-around;
+}
 
 @mixin flex ($flex,$justify,$align){
     display:$flex;

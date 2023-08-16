@@ -1,5 +1,6 @@
 @media screen and (max-width: 992px){
-    .portada{
+    .pagina-inicio{
+        .portada{
         width: 100%;
         background-image: url(../img/portada.png); 
         background-position:center;
@@ -16,12 +17,13 @@
                 }
             }
         }
+    }
     
     .seccion-destacados{
         .contenedor-destacados{
             .destacado {
-                width: 48%;
                 margin: 1rem;
+                
             }
         }
     }
@@ -53,18 +55,7 @@
     .position {
         display: none;
     }
-    .portada{
-    .animate__heartBeat {
-        font-size: 90px;
-        }
-    }
-    .seccion-destacados {
-        .contenedor-destacados {
-            .destacado {
-                width: 100%;
-            }
-        }
-    }
+    
     .seccion-video {
         iframe {
             min-width: 350px;
@@ -110,10 +101,12 @@
         }
     }
 }
-@media screen and (max-width: 481px){
-    .portada{
-        .animate__heartBeat {
-            font-size: 45px;
+@media screen and (max-width: 533px){
+    .pagina-inicio{
+        .portada{
+            .animate__heartBeat {
+                font-size: 45px;
+            }
         }
     }
 }

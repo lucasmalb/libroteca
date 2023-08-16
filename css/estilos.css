@@ -4,6 +4,26 @@
   padding: 0;
   box-sizing: border-box; }
 
+.boton {
+  border: 2px solid #f2e6d0;
+  color: #AD9E8E;
+  display: flex;
+  border-radius: 15px; }
+
+.position a img {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  transition: 1s; }
+  .position a img:hover {
+    transform: scale(1.1); }
+
+.seccion-detalle .detalle-libro .contenedor-img .contenedor-archivos {
+  display: flex;
+  justify-content: space-around; }
+
 header nav {
   background-color: #aeaeae; }
   header nav h1 {
@@ -20,20 +40,14 @@ header nav {
     header nav div div ul li a:hover {
       color: orangered !important; }
 
-.boton {
-  border: 2px solid #f2e6d0;
-  color: #AD9E8E;
-  display: flex;
-  border-radius: 15px; }
-
-.portada {
+.pagina-inicio .portada {
   width: 100%;
   background-image: url(../img/portada.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
-  .portada .animate__heartBeat {
+  .pagina-inicio .portada .animate__heartBeat {
     color: orangered;
     font-size: 100px;
     padding: 15px;
@@ -41,25 +55,25 @@ header nav {
     justify-content: center;
     align-items: center;
     animation-timing-function: infinite; }
-    .portada .animate__heartBeat span {
+    .pagina-inicio .portada .animate__heartBeat span {
       color: #f2e6d0; }
-  .portada .buscador {
+  .pagina-inicio .portada .buscador {
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center; }
-    .portada .buscador .boton {
+    .pagina-inicio .portada .buscador .boton {
       border: 2px solid #f2e6d0;
       color: #AD9E8E;
       display: flex;
       border-radius: 15px; }
-  .portada .buscador-redes {
+  .pagina-inicio .portada .buscador-redes {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .portada .buscador-redes a {
+    .pagina-inicio .portada .buscador-redes a {
       text-decoration: none; }
-      .portada .buscador-redes a i {
+      .pagina-inicio .portada .buscador-redes a i {
         font-size: 25px;
         color: #AD9E8E;
         display: flex;
@@ -168,16 +182,6 @@ header nav {
           font-size: 20px;
           margin-top: 10px; }
 
-.position a img {
-  position: fixed;
-  bottom: 50px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  transition: 1s; }
-  .position a img:hover {
-    transform: scale(1.1); }
-
 .colores {
   background-color: #f2e6ce;
   min-height: 100vh;
@@ -230,8 +234,6 @@ header nav {
     .seccion-detalle .detalle-libro .contenedor-img .img-libro {
       min-width: 220px; }
     .seccion-detalle .detalle-libro .contenedor-img .contenedor-archivos {
-      display: flex;
-      justify-content: space-around;
       background-color: #cfcccb;
       margin: .5rem 0;
       padding: .5rem; }
@@ -303,24 +305,23 @@ footer {
       color: orangered; }
 
 @media screen and (max-width: 992px) {
-  .portada {
+  .pagina-inicio .portada {
     width: 100%;
     background-image: url(../img/portada.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; }
-    .portada h2 {
+    .pagina-inicio .portada h2 {
       color: orangered;
       font-size: 25px;
       padding: 15px;
       display: flex;
       justify-content: center;
       align-items: center; }
-      .portada h2 span {
+      .pagina-inicio .portada h2 span {
         color: #f2e6d0; }
   .seccion-destacados .contenedor-destacados .destacado {
-    width: 48%;
     margin: 1rem; }
   .seccion-video iframe {
     min-width: 350px;
@@ -336,10 +337,6 @@ footer {
 @media screen and (max-width: 640px) {
   .position {
     display: none; }
-  .portada .animate__heartBeat {
-    font-size: 90px; }
-  .seccion-destacados .contenedor-destacados .destacado {
-    width: 100%; }
   .seccion-video iframe {
     min-width: 350px;
     min-height: 250px;
@@ -364,8 +361,8 @@ footer {
     footer .mail {
       text-align: center; } }
 
-@media screen and (max-width: 481px) {
-  .portada .animate__heartBeat {
+@media screen and (max-width: 533px) {
+  .pagina-inicio .portada .animate__heartBeat {
     font-size: 45px; } }
 
 @media screen and (max-width: 442px) {
