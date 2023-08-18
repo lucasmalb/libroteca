@@ -33,15 +33,11 @@ footer {
     }
     .mail {
         grid-area: mail;
-    }
-    h3 {
-        a {
-            text-decoration: none;
+        text-decoration: none;
             color: rgb(89, 76, 76);
             transition: 0.5s;
             &:hover{
                 color: orangered;
             }
         }
-    }
 }

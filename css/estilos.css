@@ -134,53 +134,54 @@ header nav {
 .pagina-genero {
   background-color: #f2e6ce;
   height: 100%; }
-  .pagina-genero .seccion-libros {
-    margin: 1rem 0; }
-    .pagina-genero .seccion-libros .titulo-genero {
-      background-color: #aeaeae;
+  .pagina-genero .seccion-libros .titulo-genero {
+    background-color: #aeaeae;
+    border-top: 2px solid #252424;
+    border-bottom: 2px solid #252424;
+    color: rgba(10, 9, 9, 0.655);
+    padding: 5px;
+    text-align: center; }
+  .pagina-genero .seccion-libros .grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center; }
+    .pagina-genero .seccion-libros .grilla .libro {
+      border: 2px solid #635d5d;
+      text-align: center;
       color: #635d5d;
-      text-align: center; }
-    .pagina-genero .seccion-libros .grilla {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      justify-content: center;
-      align-items: center; }
-      .pagina-genero .seccion-libros .grilla .libro {
-        border: 2px solid #635d5d;
+      background-color: #f2e6d0;
+      margin: 16px auto;
+      width: 165px;
+      height: 300px;
+      transition: 1s; }
+      .pagina-genero .seccion-libros .grilla .libro:hover {
+        transform: scale(1.1); }
+      .pagina-genero .seccion-libros .grilla .libro a img {
+        width: 100%; }
+      .pagina-genero .seccion-libros .grilla .libro .titulo-libro {
         text-align: center;
-        color: #635d5d;
-        background-color: #f2e6d0;
-        margin: 16px auto;
-        width: 165px;
-        height: 300px;
-        transition: 1s; }
-        .pagina-genero .seccion-libros .grilla .libro:hover {
-          transform: scale(1.1); }
-        .pagina-genero .seccion-libros .grilla .libro a img {
-          width: 100%; }
-        .pagina-genero .seccion-libros .grilla .libro .titulo-libro {
-          text-align: center;
-          font-family: 'Montserrat Alternates', sans-serif;
-          font-size: 20px;
-          margin-top: 10px; }
-      .pagina-genero .seccion-libros .grilla .libro-1 {
-        border: 2px solid #635d5d;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 20px;
+        margin-top: 10px; }
+    .pagina-genero .seccion-libros .grilla .libro-1 {
+      border: 2px solid #635d5d;
+      text-align: center;
+      color: #635d5d;
+      background-color: #f2e6d0;
+      margin: 16px auto;
+      width: 165px;
+      height: 320px;
+      transition: 1s; }
+      .pagina-genero .seccion-libros .grilla .libro-1:hover {
+        transform: scale(1.1); }
+      .pagina-genero .seccion-libros .grilla .libro-1 a img {
+        width: 100%; }
+      .pagina-genero .seccion-libros .grilla .libro-1 .titulo-libro {
         text-align: center;
-        color: #635d5d;
-        background-color: #f2e6d0;
-        margin: 16px auto;
-        width: 165px;
-        height: 320px;
-        transition: 1s; }
-        .pagina-genero .seccion-libros .grilla .libro-1:hover {
-          transform: scale(1.1); }
-        .pagina-genero .seccion-libros .grilla .libro-1 a img {
-          width: 100%; }
-        .pagina-genero .seccion-libros .grilla .libro-1 .titulo-libro {
-          text-align: center;
-          font-family: 'Montserrat Alternates', sans-serif;
-          font-size: 20px;
-          margin-top: 10px; }
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 20px;
+        margin-top: 10px; }
 
 .colores {
   background-color: #f2e6ce;
@@ -213,7 +214,8 @@ header nav {
         outline: none;
         border: none;
         border: 1px solid orangered;
-        border-radius: 0.2em; }
+        border-radius: 0.2em;
+        padding: 10px; }
       .colores .form .form-container .form-cta {
         font-family: inherit;
         font-size: 1rem;
@@ -227,7 +229,8 @@ header nav {
 
 /*publicaciones*/
 .seccion-detalle {
-  padding: 2rem 4rem; }
+  padding: 2rem 4rem;
+  background-color: #f2e6ce; }
   .seccion-detalle .detalle-libro {
     display: flex;
     flex-wrap: wrap; }
@@ -296,12 +299,11 @@ footer {
       footer .redes a img:hover {
         transform: scale(1.2); }
   footer .mail {
-    grid-area: mail; }
-  footer h3 a {
+    grid-area: mail;
     text-decoration: none;
     color: #594c4c;
     transition: 0.5s; }
-    footer h3 a:hover {
+    footer .mail:hover {
       color: orangered; }
 
 @media screen and (max-width: 992px) {
