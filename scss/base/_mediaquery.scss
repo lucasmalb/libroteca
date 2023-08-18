@@ -54,37 +54,10 @@
     }
 }
 
-@media screen and (max-width: 720px) {
-    .pagina-inicio {
-        .seccion-video {
-            iframe {
-                width: 100%;
-                display: block;
-                margin: auto;
-            }
-        }
-    }
-}
+
 
 /*media query para mobile*/
-@media screen and (max-width: 640px) {
-
-
-    .pagina-inicio {
-        .seccion-video {
-            iframe {
-                width: 100%;
-                display: block;
-                margin: auto;
-            }
-        section{
-            .position {
-                display: none;
-            }
-        }
-        
-    }
-}
+@media screen and (max-width: 640px) {        
 
     .pagina-genero {
         .seccion-libros {
@@ -127,7 +100,16 @@
         }
     }
 }
-
+@media screen and (max-width: 621px) {
+    .pagina-inicio{
+        .seccion-video{
+            iframe{
+                width:400px ;
+                height:250px ;
+            }
+        }
+    }
+}
 @media screen and (max-width: 533px) {
     .pagina-inicio {
         .portada {
@@ -146,24 +128,25 @@
         }
     }
     }
-
-@media screen and (max-width: 380px) {
-    .pagina-inicio {
-        .seccion-video {
-            iframe {
-                width: 100%;
-
+    @media screen and (max-width: 421px) {
+        .pagina-inicio{
+            .seccion-video{
+                iframe{
+                    width:200px ;
+                    height:150px ;
+                }
             }
         }
     }
-}
-@media screen and (max-width: 368px) {
-    .pagina-inicio {
-        .seccion-video {
-            iframe {
-                width: 100%;
-
+    @media screen and (max-width: 368px) {
+        .pagina-inicio{
+            .seccion-video{
+                iframe{
+                    width:30px;
+                    height:60px;
+                }
             }
         }
     }
-}
+
+
