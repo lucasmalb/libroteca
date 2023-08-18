@@ -1,5 +1,4 @@
-
-.pagina-inicio{
+.pagina-inicio {
     .portada {
         width: 100%;
         background-image: url(../img/portada.png);
@@ -7,23 +6,24 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-    
+
         .animate__heartBeat {
             color: orangered;
             font-size: nth($font-size, 1);
             padding: 15px;
             @include flex(flex, center, center);
             animation-timing-function: infinite;
-    
+
             span {
                 color: rgb(242, 230, 208)
             }
+
         }
-    
+
         .buscador {
             height: 400px;
             @include flex(flex, center, center);
-    
+
             .boton {
                 border: 2px solid rgb(242, 230, 208);
                 color: #AD9E8E;
@@ -31,13 +31,13 @@
                 border-radius: 15px;
             }
         }
-    
+
         .buscador-redes {
             @include flex(flex, center, center);
-    
+
             a {
                 text-decoration: none;
-    
+
                 i {
                     font-size: nth($font-size, 2);
                     color: #AD9E8E;
@@ -48,87 +48,91 @@
             }
         }
     }
-}
 
-.seccion-destacados {
-    h2 {
-        background-color: #aeaeae;
-        color: rgb(89, 76, 76);
-        text-align: center;
-        margin: 0px;
-        padding: 10px;
-        margin: 1rem 0;
-    }
-
-    .contenedor-destacados {
-        padding: 16px;
-        flex-wrap: wrap;
-        @include flex (flex, space-around, center);
-
-        .destacado {
-            width: 170px;
-            height: 320px;
+    .seccion-destacados {
+        background-color:rgb(242, 230, 206);
+        h2 {
+            background-color: #aeaeae;
+            color: rgb(89, 76, 76);
             text-align: center;
-            border: 2px solid #635d5d;
-            text-align: center;
-            color: #635d5d;
-            background-color: rgb(242, 230, 208);
-            transition: 1s;
+            padding: 10px;
+            border: 2px solid rgb(53, 47, 47);
+            border-bottom: 2px solid rgb(53, 47, 47);
+        }
 
-            &:hover {
-                transform: scale(1.1);
-            }
+        .contenedor-destacados {
+            padding: 16px;
+            flex-wrap: wrap;
+            @include flex (flex, space-around, center);
 
-            a {
-                img {
-                    width: 100%;
+            .destacado {
+                width: 170px;
+                height: 320px;
+                text-align: center;
+                border: 2px solid #635d5d;
+                text-align: center;
+                color: #635d5d;
+                background-color: rgb(242, 230, 208);
+                transition: 1s;
 
+                &:hover {
+                    transform: scale(1.1);
+                }
 
+                a {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .titulo-libro {
+                    min-height: 65px;
+                    margin-top: 1rem;
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    font-size: nth($font-size, 6);
                 }
             }
-            .titulo-libro {
-                min-height: 65px;
-                margin-top: 1rem;
-                font-family: 'Montserrat Alternates', sans-serif;
-                font-size: nth($font-size, 6);
-            }
+        }
+    }
+
+    .seccion-video {
+        background-color: rgb(242, 230, 206);;
+        h2 {
+            background-color: #aeaeae;
+            color: rgb(89, 76, 76);
+            text-align: center;
+            margin: 0px;
+            padding: 10px;
+            border: 2px solid rgb(53, 47, 47);
+            border-bottom: 2px solid rgb(53, 47, 47);
+        }
+
+        iframe {
+            min-width: 700px;
+            min-height: 450px;
+            display: block;
+            margin: auto;
+            padding: 30px;
         }
     }
 }
 
-.seccion-video {
-    padding: 2rem 0;
-
-    h2 {
-        background-color: #aeaeae;
-        color: rgb(89, 76, 76);
-        text-align: center;
-        margin: 0px;
-        padding: 10px;
-        margin: 1rem 0;
-    }
-
-    iframe {
-        min-width: 700px;
-        min-height: 450px;
-        display: block;
-        margin: auto;
-    }
-}
 
 .pagina-genero {
     background-color: rgb(242, 230, 206);
     height: 100%;
+
     .seccion-libros {
         .titulo-genero {
             background-color: #aeaeae;
-            border-top:2px solid rgb(37, 36, 36);
+            border-top: 2px solid rgb(37, 36, 36);
             border-bottom: 2px solid rgb(37, 36, 36);
             color: rgba(10, 9, 9, 0.655);
             padding: 5px;
             text-align: center;
 
         }
+
         .grilla {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -162,15 +166,16 @@
                     margin-top: 10px;
                 }
             }
-                .libro-1{
-                    border: 2px solid #635d5d;
-                    text-align: center;
-                    color: #635d5d;
-                    background-color: rgb(242, 230, 208);
-                    margin: 16px auto;
-                    width: 165px;
-                    height: 320px;
-                    transition: 1s;
+
+            .libro-1 {
+                border: 2px solid #635d5d;
+                text-align: center;
+                color: #635d5d;
+                background-color: rgb(242, 230, 208);
+                margin: 16px auto;
+                width: 165px;
+                height: 320px;
+                transition: 1s;
 
                 &:hover {
                     transform: scale(1.1);
@@ -181,6 +186,7 @@
                         width: 100%;
                     }
                 }
+
                 .titulo-libro {
                     text-align: center;
                     font-family: 'Montserrat Alternates', sans-serif;
@@ -193,7 +199,7 @@
 }
 
 .colores {
-    background-color:rgb(242, 230, 206);
+    background-color: rgb(242, 230, 206);
     min-height: 100vh;
     font-family: inherit;
     width: 100%;
@@ -214,6 +220,7 @@
             display: grid;
             gap: 1em;
             grid-auto-columns: 100%;
+
             .form.title {
                 font-family: inherit;
                 text-align: center;

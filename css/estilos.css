@@ -83,53 +83,56 @@ header nav {
         margin: 5px;
         height: -60px; }
 
-.seccion-destacados h2 {
-  background-color: #aeaeae;
-  color: #594c4c;
-  text-align: center;
-  margin: 0px;
-  padding: 10px;
-  margin: 1rem 0; }
-
-.seccion-destacados .contenedor-destacados {
-  padding: 16px;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-  .seccion-destacados .contenedor-destacados .destacado {
-    width: 170px;
-    height: 320px;
+.pagina-inicio .seccion-destacados {
+  background-color: #f2e6ce; }
+  .pagina-inicio .seccion-destacados h2 {
+    background-color: #aeaeae;
+    color: #594c4c;
     text-align: center;
-    border: 2px solid #635d5d;
-    text-align: center;
-    color: #635d5d;
-    background-color: #f2e6d0;
-    transition: 1s; }
-    .seccion-destacados .contenedor-destacados .destacado:hover {
-      transform: scale(1.1); }
-    .seccion-destacados .contenedor-destacados .destacado a img {
-      width: 100%; }
-    .seccion-destacados .contenedor-destacados .destacado .titulo-libro {
-      min-height: 65px;
-      margin-top: 1rem;
-      font-family: 'Montserrat Alternates', sans-serif;
-      font-size: 20px; }
+    padding: 10px;
+    border: 2px solid #352f2f;
+    border-bottom: 2px solid #352f2f; }
+  .pagina-inicio .seccion-destacados .contenedor-destacados {
+    padding: 16px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .pagina-inicio .seccion-destacados .contenedor-destacados .destacado {
+      width: 170px;
+      height: 320px;
+      text-align: center;
+      border: 2px solid #635d5d;
+      text-align: center;
+      color: #635d5d;
+      background-color: #f2e6d0;
+      transition: 1s; }
+      .pagina-inicio .seccion-destacados .contenedor-destacados .destacado:hover {
+        transform: scale(1.1); }
+      .pagina-inicio .seccion-destacados .contenedor-destacados .destacado a img {
+        width: 100%; }
+      .pagina-inicio .seccion-destacados .contenedor-destacados .destacado .titulo-libro {
+        min-height: 65px;
+        margin-top: 1rem;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 20px; }
 
-.seccion-video {
-  padding: 2rem 0; }
-  .seccion-video h2 {
+.pagina-inicio .seccion-video {
+  background-color: #f2e6ce; }
+  .pagina-inicio .seccion-video h2 {
     background-color: #aeaeae;
     color: #594c4c;
     text-align: center;
     margin: 0px;
     padding: 10px;
-    margin: 1rem 0; }
-  .seccion-video iframe {
+    border: 2px solid #352f2f;
+    border-bottom: 2px solid #352f2f; }
+  .pagina-inicio .seccion-video iframe {
     min-width: 700px;
     min-height: 450px;
     display: block;
-    margin: auto; }
+    margin: auto;
+    padding: 30px; }
 
 .pagina-genero {
   background-color: #f2e6ce;
@@ -335,15 +338,22 @@ footer {
     .pagina-genero .seccion-libros .grilla .libro .titulo-libro {
       font-family: 'Montserrat Alternates', sans-serif; } }
 
+@media screen and (max-width: 720px) {
+  .pagina-inicio .seccion-video iframe {
+    min-width: 600px;
+    min-height: 400px;
+    display: block;
+    margin: auto; } }
+
 /*media query para mobile*/
 @media screen and (max-width: 640px) {
-  .position {
-    display: none; }
-  .seccion-video iframe {
+  .pagina-inicio .seccion-video iframe {
     min-width: 350px;
     min-height: 250px;
     display: block;
     margin: auto; }
+  .pagina-inicio .seccion-video section .position {
+    display: none; }
   .pagina-genero .seccion-libros .grilla {
     grid-template-columns: 1fr; }
   .seccion-detalle {
@@ -368,12 +378,12 @@ footer {
     font-size: 45px; } }
 
 @media screen and (max-width: 442px) {
-  .form {
+  .colores .form {
     max-width: 300px; } }
 
-@media screen and (max-width: 368px) {
-  .seccion-video iframe {
-    min-width: 320px;
-    min-height: 250px;
+@media screen and (max-width: 380px) {
+  .pagina-inicio .seccion-video iframe {
+    width: 50px;
+    height: 50px;
     display: block;
     margin: auto; } }
