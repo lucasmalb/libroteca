@@ -328,10 +328,11 @@ footer {
   .pagina-inicio .seccion-destacados .contenedor-destacados .destacado {
     margin: 1rem; }
   .pagina-inicio .seccion-video iframe {
-    min-width: 350px;
-    min-height: 250px;
+    max-width: 350px;
+    max-height: 250px;
     display: block;
-    margin: auto; }
+    margin: auto;
+    width: 100%; }
   .pagina-genero .seccion-libros .grilla {
     grid-template-columns: 1fr 1fr; }
     .pagina-genero .seccion-libros .grilla .libro .titulo-libro {
@@ -339,6 +340,8 @@ footer {
 
 /*media query para mobile*/
 @media screen and (max-width: 640px) {
+  .position {
+    display: none; }
   .pagina-genero .seccion-libros .grilla {
     grid-template-columns: 1fr; }
   .seccion-detalle {
@@ -358,11 +361,6 @@ footer {
     footer .mail {
       text-align: center; } }
 
-@media screen and (max-width: 621px) {
-  .pagina-inicio .seccion-video iframe {
-    width: 400px;
-    height: 250px; } }
-
 @media screen and (max-width: 533px) {
   .pagina-inicio .portada .animate__heartBeat {
     font-size: 45px; } }
@@ -370,18 +368,3 @@ footer {
 @media screen and (max-width: 442px) {
   .colores .form {
     max-width: 300px; } }
-
-@media screen and (max-width: 421px) {
-  .pagina-inicio .seccion-video iframe {
-    width: 200px;
-    height: 150px; } }
-
-@media screen and (max-width: 368px) {
-  .pagina-inicio .seccion-video iframe {
-    width: 50px;
-    height: 50px; } }
-
-@media screen and (max-width: 368px) {
-  .pagina-inicio .seccion-video iframe {
-    width: 25px;
-    height: 55px; } }
