@@ -221,11 +221,10 @@
             gap: 1em;
             grid-auto-columns: 100%;
 
-            .form.title {
+            .form-title {
                 font-family: inherit;
                 text-align: center;
                 font-size: nth($font-size, 4);
-                margin-bottom: 4em;
             }
 
             .form-input {
